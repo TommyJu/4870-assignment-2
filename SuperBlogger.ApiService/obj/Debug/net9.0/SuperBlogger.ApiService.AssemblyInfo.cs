@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SuperBlogger.ApiService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac9486e3595bc676809fd07d9a3a5e185ebcd6bf")]
 [assembly: System.Reflection.AssemblyProductAttribute("SuperBlogger.ApiService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SuperBlogger.ApiService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

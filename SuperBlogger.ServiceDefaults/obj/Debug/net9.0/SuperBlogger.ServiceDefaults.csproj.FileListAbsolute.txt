@@ -1,0 +1,13 @@
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.ServiceDefaults\bin\Debug\net9.0\SuperBlogger.ServiceDefaults.deps.json
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.ServiceDefaults\bin\Debug\net9.0\SuperBlogger.ServiceDefaults.dll
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.ServiceDefaults\bin\Debug\net9.0\SuperBlogger.ServiceDefaults.pdb
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.ServiceDefaults\obj\Debug\net9.0\SuperBlogger.ServiceDefaults.csproj.AssemblyReference.cache
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.ServiceDefaults\obj\Debug\net9.0\SuperBlogger.ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.ServiceDefaults\obj\Debug\net9.0\SuperBlogger.ServiceDefaults.AssemblyInfoInputs.cache
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.ServiceDefaults\obj\Debug\net9.0\SuperBlogger.ServiceDefaults.AssemblyInfo.cs
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.ServiceDefaults\obj\Debug\net9.0\SuperBlogger.ServiceDefaults.csproj.CoreCompileInputs.cache
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.ServiceDefaults\obj\Debug\net9.0\SuperBlogger.ServiceDefaults.sourcelink.json
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.ServiceDefaults\obj\Debug\net9.0\SuperBlogger.ServiceDefaults.dll
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.ServiceDefaults\obj\Debug\net9.0\refint\SuperBlogger.ServiceDefaults.dll
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.ServiceDefaults\obj\Debug\net9.0\SuperBlogger.ServiceDefaults.pdb
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.ServiceDefaults\obj\Debug\net9.0\ref\SuperBlogger.ServiceDefaults.dll

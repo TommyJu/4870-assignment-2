@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "s0/shKjcetKGH6M4GvlrEyxbG1LraerzR7nqW1O69cs=",
+  "Source": "SuperBlogger.ApiService",
+  "BasePath": "_content/SuperBlogger.ApiService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
