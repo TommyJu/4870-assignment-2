@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BloggerBlazorServer\BloggerBlazorServer.csproj" />
     <ProjectReference Include="..\BloggerLibrary\BloggerLibrary.csproj" />
     <ProjectReference Include="..\SuperBlogger.ServiceDefaults\SuperBlogger.ServiceDefaults.csproj" />
   </ItemGroup>

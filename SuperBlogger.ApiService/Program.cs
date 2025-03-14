@@ -1,5 +1,5 @@
-using BloggerBlazorServer.Data;
 using Microsoft.EntityFrameworkCore;
+using SuperBlogger.ApiService.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -49,17 +49,10 @@ app.UseExceptionHandler(appBuilder =>
     });
 });
 
-// app.MapGet("/articles", async (ApplicationDbContext db) =>
-// {
-//     var articles = await db.Article.ToListAsync();
-//     return articles;
-// });
-
 app.MapGet("/articles", async (ApplicationDbContext db) =>
 {
-    Console.WriteLine($"Using connection string: {connectionString}");
-    int count = await db.Article.CountAsync();
-    return Results.Ok($"Total Articles: {count}");
+    var articles = await db.Article.ToListAsync();
+    return articles;
 });
 
 var summaries = new[]

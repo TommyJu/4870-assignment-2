@@ -120,11 +120,6 @@ C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperB
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.ApiService\obj\Debug\net9.0\SuperBlogger.ApiService.pdb
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.ApiService\obj\Debug\net9.0\SuperBlogger.ApiService.genruntimeconfig.cache
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.ApiService\obj\Debug\net9.0\ref\SuperBlogger.ApiService.dll
-C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.ApiService\bin\Debug\net9.0\BloggerBlazorServer.deps.json
-C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.ApiService\bin\Debug\net9.0\BloggerBlazorServer.runtimeconfig.json
-C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.ApiService\bin\Debug\net9.0\BloggerBlazorServer.staticwebassets.runtime.json
-C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.ApiService\bin\Debug\net9.0\BloggerBlazorServer.staticwebassets.endpoints.json
-C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.ApiService\bin\Debug\net9.0\BloggerBlazorServer.exe
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.ApiService\bin\Debug\net9.0\SuperBlogger.ApiService.staticwebassets.runtime.json
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.ApiService\bin\Debug\net9.0\CsvHelper.dll
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.ApiService\bin\Debug\net9.0\Humanizer.dll
@@ -215,9 +210,5 @@ C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperB
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.ApiService\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.ApiService\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.ApiService\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
-C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.ApiService\bin\Debug\net9.0\BloggerBlazorServer.dll
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.ApiService\bin\Debug\net9.0\BloggerLibrary.dll
-C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.ApiService\bin\Debug\net9.0\BloggerBlazorServer.pdb
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.ApiService\bin\Debug\net9.0\BloggerLibrary.pdb
-C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.ApiService\obj\Debug\net9.0\SuperBlogger.ApiService.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.ApiService\obj\Debug\net9.0\compressed\t9lja5ggq9-evp3nhl77e.gz
