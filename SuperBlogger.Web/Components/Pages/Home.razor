@@ -1,5 +1,6 @@
 ﻿@page "/"
 @using BlogLibrary
+@using Microsoft.AspNetCore.Components.QuickGrid
 @attribute [StreamRendering(true)]
 @attribute [OutputCache(Duration = 5)]
 
@@ -8,46 +9,36 @@
 <link rel="stylesheet" href="style.css" asp-append-version="true" />
 
 <div class="text-center">
-<div>
-        <form style="display: flex; flex-direction: column; gap: 24px;">
-            <h1 class="display-4">Welcome</h1>
-            @* <div style="display: flex; justify-content: center; column-gap: 40px;">
-                <div>
-                    <label for="dateStart">Start Date:</label>
-                    <input type="date" class="form-control" max="@DateTime.Now.ToString("yyyy-MM-dd")" id="dateStart" @bind="StartDate"/>
-                </div>
-                <div>
-                    <label for="dateEnd">End Date:</label>
-                    <input type="date" class="form-control" id="dateEnd" @bind="EndDate"/>
-                </div>
-            </div>
-            <button class="btn btn-outline-primary" @onclick="FilterArticles">Filter Articles by Date</button> *@
-        </form>
-    </div>
-     <div style="margin-top: 40px;">
+    <h1 class="display-4">Welcome</h1>
+
+    <div style="margin-top: 40px;">
         <h1>Recent Articles</h1>
-        @if (articles != null && articles.Any())
+
+        @if (articles is null)
         {
-            @foreach (var article in articles)
-            {
-                <div class="card text-start" style="margin-bottom: 20px;">
-                    <div class="card-body">
-                        <h3 class="card-title">@article.Title</h3>
-                        <h5 class="article-meta">Author: @article.UserName, Date: @DateOnly.FromDateTime(article.CreateDate ?? DateTime.MinValue)</h5>
-                        <p class="card-text">
-                            @(string.IsNullOrEmpty(article.Body) ? string.Empty : (article.Body.Length > 100 ? article.Body.Substring(0, 100) + "..." : article.Body))
-                            @if (!string.IsNullOrEmpty(article.Body) && article.Body.Length > 100)
-                            {
-                                <a href="/readmore/@article.ArticleId" class="more-link">more...</a>
-                            }
-                        </p>
-                    </div>
-                </div>
-            }
+            <p>Loading articles...</p>
+        }
+        else if (!articles.Any())
+        {
+            <p>No articles found.</p>
         }
         else
         {
-            <p>No articles found.</p>
+            <QuickGrid Items="@articles.AsQueryable()" TGridItem="Article" class="table">
+                <PropertyColumn Property="@(_ => _.Title)" />
+                <PropertyColumn Property="@(_ => _.UserName)" Title="Author"/>
+                <PropertyColumn Property="@(_ => _.CreateDate)" Format="d" Title="Date"/>
+                <TemplateColumn Title="Content">
+
+                        <p>
+                             @(context.Body != null && context.Body.Length > 100 ? context.Body.Substring(0, 100) + "..." : context.Body ?? string.Empty)
+                             @if(context.Body.Length > 100)
+                             {
+                                <a href="/readmore/@context.ArticleId" class="more-link">Read more</a>
+                             }
+                        </p>
+                </TemplateColumn>
+            </QuickGrid>
         }
     </div>
 </div>
@@ -63,14 +54,14 @@
         articles = (await articleApiClient.GetArticlesAsync()).ToList();
     }
 
-        private void FilterArticles()
+    private void FilterArticles()
     {
         // Simulated filtering logic (replace with API call)
         if (articles != null)
         {
             articles = articles.Where(a =>
-                (!StartDate.HasValue || a.CreateDate >= StartDate.Value) &&
-                (!EndDate.HasValue || a.CreateDate <= EndDate.Value)
+            (!StartDate.HasValue || a.CreateDate >= StartDate.Value) &&
+            (!EndDate.HasValue || a.CreateDate <= EndDate.Value)
             ).ToList();
         }
     }

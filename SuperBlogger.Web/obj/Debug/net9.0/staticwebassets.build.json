@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Z3KQr+UG5F6S5LtaO0FLuYe4ZpvYYH8lu6T1BNgqFtg=",
+  "Hash": "RA16NEDMBFTKYR92ckLfxPbRCZjxwJTQJk+d5vq/R4c=",
   "Source": "SuperBlogger.Web",
   "BasePath": "_content/SuperBlogger.Web",
   "Mode": "Default",
@@ -16,6 +16,48 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\tommy\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.3\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css",
+      "SourceId": "Microsoft.AspNetCore.Components.QuickGrid",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\tommy\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.3\\staticwebassets\\",
+      "BasePath": "_content/Microsoft.AspNetCore.Components.QuickGrid",
+      "RelativePath": "Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "25o87uqmvr",
+      "Integrity": "Nuu0BHvGBlwN6c5FSVjV9yxX0YPfwg3ufdOucRJCOz0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\tommy\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.3\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\tommy\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.3\\staticwebassets\\QuickGrid.razor.js",
+      "SourceId": "Microsoft.AspNetCore.Components.QuickGrid",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\tommy\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.3\\staticwebassets\\",
+      "BasePath": "_content/Microsoft.AspNetCore.Components.QuickGrid",
+      "RelativePath": "QuickGrid.razor.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "eu7w3d5g1a",
+      "Integrity": "tnamWuQ2F5I2J8hbtBt4/9i8Mb2y2o+9Tepj5tUrSdU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\tommy\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.3\\staticwebassets\\QuickGrid.razor.js"
+    },
     {
       "Identity": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\1o72vv5ydf-eti6g5r3hu.gz",
       "SourceId": "SuperBlogger.Web",
@@ -38,12 +80,33 @@
       "OriginalItemSpec": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\SuperBlogger.Web.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\j24cel3r6w-eti6g5r3hu.gz",
+      "Identity": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\3gin1ph7ub-25o87uqmvr.gz",
+      "SourceId": "Microsoft.AspNetCore.Components.QuickGrid",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/Microsoft.AspNetCore.Components.QuickGrid",
+      "RelativePath": "Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\tommy\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.3\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "izrngo8qdo",
+      "Integrity": "bl1Sll6BsS4llCzjKcNcHMwzxdPETwjAAvYwJAQ73Vc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\tommy\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.3\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\j24cel3r6w-jv8cykcd73.gz",
       "SourceId": "SuperBlogger.Web",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/SuperBlogger.Web",
-      "RelativePath": "SuperBlogger.Web#[.{fingerprint=eti6g5r3hu}]?.styles.css.gz",
+      "RelativePath": "SuperBlogger.Web#[.{fingerprint=jv8cykcd73}]?.styles.css.gz",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Alternative",
@@ -52,8 +115,8 @@
       "RelatedAsset": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\scopedcss\\bundle\\SuperBlogger.Web.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "735kd494rl",
-      "Integrity": "w6PlcwFg6j5eQkJGPSGpbG0dpGUPvyOKm/ncnNim4f8=",
+      "Fingerprint": "c4v6yds1ev",
+      "Integrity": "DJl0f6U6hAkvGYwlc/pbZGI+Lm6/yA/lvzF1RKf19FA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\scopedcss\\bundle\\SuperBlogger.Web.styles.css"
@@ -122,6 +185,27 @@
       "OriginalItemSpec": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\wwwroot\\app.css"
     },
     {
+      "Identity": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\unlu0xluo6-eu7w3d5g1a.gz",
+      "SourceId": "Microsoft.AspNetCore.Components.QuickGrid",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/Microsoft.AspNetCore.Components.QuickGrid",
+      "RelativePath": "QuickGrid.razor.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\tommy\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.3\\staticwebassets\\QuickGrid.razor.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "p4818tnj3t",
+      "Integrity": "l1TN0xlzfmCvoE1j6NfscfK49JNKk0yWC8evKQzqR0w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\tommy\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.3\\staticwebassets\\QuickGrid.razor.js"
+    },
+    {
       "Identity": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\yn8xs27kk9-6gzpyzhau4.gz",
       "SourceId": "SuperBlogger.Web",
       "SourceType": "Discovered",
@@ -157,8 +241,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "eti6g5r3hu",
-      "Integrity": "Pqcx0tnEeCLw0CoPuvuMwGwZt25JxIDqi6ThUJ3Vkf4=",
+      "Fingerprint": "jv8cykcd73",
+      "Integrity": "ERYKJqIS55idsxlkSO9I7++B82vXkZ+TDK/Jj4OEuHM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\scopedcss\\bundle\\SuperBlogger.Web.styles.css"
@@ -291,6 +375,333 @@
     }
   ],
   "Endpoints": [
+    {
+      "Route": "_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css",
+      "AssetFile": "C:\\Users\\tommy\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.3\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8251"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Nuu0BHvGBlwN6c5FSVjV9yxX0YPfwg3ufdOucRJCOz0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Feb 2025 03:07:33 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "25o87uqmvr"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Nuu0BHvGBlwN6c5FSVjV9yxX0YPfwg3ufdOucRJCOz0="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css"
+        }
+      ]
+    },
+    {
+      "Route": "_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css.gz",
+      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\3gin1ph7ub-25o87uqmvr.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2452"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bl1Sll6BsS4llCzjKcNcHMwzxdPETwjAAvYwJAQ73Vc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Feb 2025 03:07:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bl1Sll6BsS4llCzjKcNcHMwzxdPETwjAAvYwJAQ73Vc="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
+      "AssetFile": "C:\\Users\\tommy\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.3\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8251"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Nuu0BHvGBlwN6c5FSVjV9yxX0YPfwg3ufdOucRJCOz0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Feb 2025 03:07:33 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Nuu0BHvGBlwN6c5FSVjV9yxX0YPfwg3ufdOucRJCOz0="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
+      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\3gin1ph7ub-25o87uqmvr.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000407664085"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2452"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bl1Sll6BsS4llCzjKcNcHMwzxdPETwjAAvYwJAQ73Vc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Feb 2025 03:07:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Nuu0BHvGBlwN6c5FSVjV9yxX0YPfwg3ufdOucRJCOz0=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Nuu0BHvGBlwN6c5FSVjV9yxX0YPfwg3ufdOucRJCOz0="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Microsoft.AspNetCore.Components.QuickGrid/QuickGrid.razor.js",
+      "AssetFile": "C:\\Users\\tommy\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\9.0.3\\staticwebassets\\QuickGrid.razor.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2563"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tnamWuQ2F5I2J8hbtBt4/9i8Mb2y2o+9Tepj5tUrSdU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Feb 2025 02:45:27 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tnamWuQ2F5I2J8hbtBt4/9i8Mb2y2o+9Tepj5tUrSdU="
+        },
+        {
+          "Name": "script-type",
+          "Value": "module"
+        }
+      ]
+    },
+    {
+      "Route": "_content/Microsoft.AspNetCore.Components.QuickGrid/QuickGrid.razor.js",
+      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\unlu0xluo6-eu7w3d5g1a.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001183431953"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "844"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l1TN0xlzfmCvoE1j6NfscfK49JNKk0yWC8evKQzqR0w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Feb 2025 02:45:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"tnamWuQ2F5I2J8hbtBt4/9i8Mb2y2o+9Tepj5tUrSdU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tnamWuQ2F5I2J8hbtBt4/9i8Mb2y2o+9Tepj5tUrSdU="
+        },
+        {
+          "Name": "script-type",
+          "Value": "module"
+        }
+      ]
+    },
+    {
+      "Route": "_content/Microsoft.AspNetCore.Components.QuickGrid/QuickGrid.razor.js.gz",
+      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\unlu0xluo6-eu7w3d5g1a.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "844"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l1TN0xlzfmCvoE1j6NfscfK49JNKk0yWC8evKQzqR0w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Feb 2025 02:45:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-l1TN0xlzfmCvoE1j6NfscfK49JNKk0yWC8evKQzqR0w="
+        }
+      ]
+    },
     {
       "Route": "app.css",
       "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\sarufxvjf9-lsmoadmmt2.gz",
@@ -1864,13 +2275,13 @@
       ]
     },
     {
-      "Route": "SuperBlogger.Web.eti6g5r3hu.styles.css",
-      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\j24cel3r6w-eti6g5r3hu.gz",
+      "Route": "SuperBlogger.Web.jv8cykcd73.styles.css",
+      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\j24cel3r6w-jv8cykcd73.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001287001287"
+          "Quality": "0.001196172249"
         }
       ],
       "ResponseHeaders": [
@@ -1880,15 +2291,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "776"
+          "Value": "835"
         },
         {
           "Name": "ETag",
-          "Value": "\"w6PlcwFg6j5eQkJGPSGpbG0dpGUPvyOKm/ncnNim4f8=\""
+          "Value": "\"DJl0f6U6hAkvGYwlc/pbZGI+Lm6/yA/lvzF1RKf19FA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 01:49:28 GMT"
+          "Value": "Sun, 16 Mar 2025 02:47:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1908,26 +2319,30 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Pqcx0tnEeCLw0CoPuvuMwGwZt25JxIDqi6ThUJ3Vkf4=\""
+          "Value": "W/\"ERYKJqIS55idsxlkSO9I7++B82vXkZ+TDK/Jj4OEuHM=\""
+        },
+        {
+          "Name": "Link",
+          "Value": "<_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css>; rel=\"preload\"; as=\"style\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "eti6g5r3hu"
+          "Value": "jv8cykcd73"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ERYKJqIS55idsxlkSO9I7++B82vXkZ+TDK/Jj4OEuHM="
         },
         {
           "Name": "label",
           "Value": "SuperBlogger.Web.styles.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Pqcx0tnEeCLw0CoPuvuMwGwZt25JxIDqi6ThUJ3Vkf4="
         }
       ]
     },
     {
-      "Route": "SuperBlogger.Web.eti6g5r3hu.styles.css",
+      "Route": "SuperBlogger.Web.jv8cykcd73.styles.css",
       "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\scopedcss\\bundle\\SuperBlogger.Web.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1936,8 +2351,12 @@
           "Value": "bytes"
         },
         {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
           "Name": "Content-Length",
-          "Value": "2191"
+          "Value": "2324"
         },
         {
           "Name": "Content-Type",
@@ -1945,35 +2364,35 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Pqcx0tnEeCLw0CoPuvuMwGwZt25JxIDqi6ThUJ3Vkf4=\""
+          "Value": "\"ERYKJqIS55idsxlkSO9I7++B82vXkZ+TDK/Jj4OEuHM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 01:49:28 GMT"
+          "Value": "Sun, 16 Mar 2025 02:47:11 GMT"
         },
         {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Name": "Link",
+          "Value": "<_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css>; rel=\"preload\"; as=\"style\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "eti6g5r3hu"
+          "Value": "jv8cykcd73"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ERYKJqIS55idsxlkSO9I7++B82vXkZ+TDK/Jj4OEuHM="
         },
         {
           "Name": "label",
           "Value": "SuperBlogger.Web.styles.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Pqcx0tnEeCLw0CoPuvuMwGwZt25JxIDqi6ThUJ3Vkf4="
         }
       ]
     },
     {
-      "Route": "SuperBlogger.Web.eti6g5r3hu.styles.css.gz",
-      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\j24cel3r6w-eti6g5r3hu.gz",
+      "Route": "SuperBlogger.Web.jv8cykcd73.styles.css.gz",
+      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\j24cel3r6w-jv8cykcd73.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1982,7 +2401,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "776"
+          "Value": "835"
         },
         {
           "Name": "Content-Type",
@@ -1990,11 +2409,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"w6PlcwFg6j5eQkJGPSGpbG0dpGUPvyOKm/ncnNim4f8=\""
+          "Value": "\"DJl0f6U6hAkvGYwlc/pbZGI+Lm6/yA/lvzF1RKf19FA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 01:49:28 GMT"
+          "Value": "Sun, 16 Mar 2025 02:47:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2012,7 +2431,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "eti6g5r3hu"
+          "Value": "jv8cykcd73"
         },
         {
           "Name": "label",
@@ -2020,18 +2439,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-w6PlcwFg6j5eQkJGPSGpbG0dpGUPvyOKm/ncnNim4f8="
+          "Value": "sha256-DJl0f6U6hAkvGYwlc/pbZGI+Lm6/yA/lvzF1RKf19FA="
         }
       ]
     },
     {
       "Route": "SuperBlogger.Web.styles.css",
-      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\j24cel3r6w-eti6g5r3hu.gz",
+      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\j24cel3r6w-jv8cykcd73.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001287001287"
+          "Quality": "0.001196172249"
         }
       ],
       "ResponseHeaders": [
@@ -2041,15 +2460,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "776"
+          "Value": "835"
         },
         {
           "Name": "ETag",
-          "Value": "\"w6PlcwFg6j5eQkJGPSGpbG0dpGUPvyOKm/ncnNim4f8=\""
+          "Value": "\"DJl0f6U6hAkvGYwlc/pbZGI+Lm6/yA/lvzF1RKf19FA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 01:49:28 GMT"
+          "Value": "Sun, 16 Mar 2025 02:47:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2069,13 +2488,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Pqcx0tnEeCLw0CoPuvuMwGwZt25JxIDqi6ThUJ3Vkf4=\""
+          "Value": "W/\"ERYKJqIS55idsxlkSO9I7++B82vXkZ+TDK/Jj4OEuHM=\""
+        },
+        {
+          "Name": "Link",
+          "Value": "<_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css>; rel=\"preload\"; as=\"style\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Pqcx0tnEeCLw0CoPuvuMwGwZt25JxIDqi6ThUJ3Vkf4="
+          "Value": "sha256-ERYKJqIS55idsxlkSO9I7++B82vXkZ+TDK/Jj4OEuHM="
         }
       ]
     },
@@ -2089,8 +2512,12 @@
           "Value": "bytes"
         },
         {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
           "Name": "Content-Length",
-          "Value": "2191"
+          "Value": "2324"
         },
         {
           "Name": "Content-Type",
@@ -2098,27 +2525,27 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Pqcx0tnEeCLw0CoPuvuMwGwZt25JxIDqi6ThUJ3Vkf4=\""
+          "Value": "\"ERYKJqIS55idsxlkSO9I7++B82vXkZ+TDK/Jj4OEuHM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 01:49:28 GMT"
+          "Value": "Sun, 16 Mar 2025 02:47:11 GMT"
         },
         {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Name": "Link",
+          "Value": "<_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.25o87uqmvr.bundle.scp.css>; rel=\"preload\"; as=\"style\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Pqcx0tnEeCLw0CoPuvuMwGwZt25JxIDqi6ThUJ3Vkf4="
+          "Value": "sha256-ERYKJqIS55idsxlkSO9I7++B82vXkZ+TDK/Jj4OEuHM="
         }
       ]
     },
     {
       "Route": "SuperBlogger.Web.styles.css.gz",
-      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\j24cel3r6w-eti6g5r3hu.gz",
+      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\j24cel3r6w-jv8cykcd73.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2127,7 +2554,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "776"
+          "Value": "835"
         },
         {
           "Name": "Content-Type",
@@ -2135,11 +2562,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"w6PlcwFg6j5eQkJGPSGpbG0dpGUPvyOKm/ncnNim4f8=\""
+          "Value": "\"DJl0f6U6hAkvGYwlc/pbZGI+Lm6/yA/lvzF1RKf19FA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 01:49:28 GMT"
+          "Value": "Sun, 16 Mar 2025 02:47:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2157,7 +2584,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-w6PlcwFg6j5eQkJGPSGpbG0dpGUPvyOKm/ncnNim4f8="
+          "Value": "sha256-DJl0f6U6hAkvGYwlc/pbZGI+Lm6/yA/lvzF1RKf19FA="
         }
       ]
     }

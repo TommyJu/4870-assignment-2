@@ -245,7 +245,6 @@ C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\Blogge
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\BloggerBlazorServer\obj\Debug\net9.0\compressed\9cwaf5m8j2-h1s4sie4z3.gz
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\BloggerBlazorServer\obj\Debug\net9.0\compressed\b8hfd18ng6-63fj8s7r0e.gz
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\BloggerBlazorServer\obj\Debug\net9.0\compressed\nbuk2tk1j1-0j3bgjxly4.gz
-C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\BloggerBlazorServer\obj\Debug\net9.0\compressed\vqpoe5jia1-av0l4acczs.gz
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\BloggerBlazorServer\obj\Debug\net9.0\compressed\kq3n39xgo4-av0l4acczs.gz
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\BloggerBlazorServer\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\BloggerBlazorServer\obj\Debug\net9.0\staticwebassets.development.json
@@ -263,3 +262,13 @@ C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\Blogge
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\BloggerBlazorServer\obj\Debug\net9.0\BloggerBlazorServer.genruntimeconfig.cache
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\BloggerBlazorServer\obj\Debug\net9.0\ref\BloggerBlazorServer.dll
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\BloggerBlazorServer\obj\Debug\net9.0\compressed\8w195eofdm-gfipzi8d4t.gz
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\BloggerBlazorServer\bin\Debug\net9.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\BloggerBlazorServer\bin\Debug\net9.0\Microsoft.AspNetCore.Components.dll
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\BloggerBlazorServer\bin\Debug\net9.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\BloggerBlazorServer\bin\Debug\net9.0\Microsoft.AspNetCore.Components.QuickGrid.dll
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\BloggerBlazorServer\bin\Debug\net9.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\BloggerBlazorServer\bin\Debug\net9.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\BloggerBlazorServer\bin\Debug\net9.0\Microsoft.JSInterop.dll
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\BloggerBlazorServer\obj\Debug\net9.0\compressed\unlu0xluo6-eu7w3d5g1a.gz
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\BloggerBlazorServer\obj\Debug\net9.0\compressed\3gin1ph7ub-25o87uqmvr.gz
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\BloggerBlazorServer\obj\Debug\net9.0\compressed\vqpoe5jia1-lstnufqge8.gz

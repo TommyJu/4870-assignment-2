@@ -79,6 +79,15 @@ C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperB
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\obj\Debug\net9.0\ref\SuperBlogger.Web.dll
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\bin\Debug\net9.0\BloggerLibrary.dll
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\bin\Debug\net9.0\BloggerLibrary.pdb
-C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\obj\Debug\net9.0\compressed\j24cel3r6w-eti6g5r3hu.gz
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\obj\Debug\net9.0\compressed\1o72vv5ydf-eti6g5r3hu.gz
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\obj\Debug\net9.0\compressed\p7763y1arf-q5k335p759.gz
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\bin\Debug\net9.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\bin\Debug\net9.0\Microsoft.AspNetCore.Components.dll
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\bin\Debug\net9.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\bin\Debug\net9.0\Microsoft.AspNetCore.Components.QuickGrid.dll
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\bin\Debug\net9.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\bin\Debug\net9.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\bin\Debug\net9.0\Microsoft.JSInterop.dll
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\obj\Debug\net9.0\compressed\unlu0xluo6-eu7w3d5g1a.gz
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\obj\Debug\net9.0\compressed\3gin1ph7ub-25o87uqmvr.gz
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\obj\Debug\net9.0\compressed\j24cel3r6w-jv8cykcd73.gz
