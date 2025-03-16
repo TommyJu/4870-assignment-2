@@ -35,8 +35,8 @@
                         <h3 class="card-title">@article.Title</h3>
                         <h5 class="article-meta">Author: @article.UserName, Date: @DateOnly.FromDateTime(article.CreateDate ?? DateTime.MinValue)</h5>
                         <p class="card-text">
-                            @(article.Body.Length > 100 ? article.Body.Substring(0, 100) + "..." : article.Body)
-                            @if (article.Body.Length > 100)
+                            @(string.IsNullOrEmpty(article.Body) ? string.Empty : (article.Body.Length > 100 ? article.Body.Substring(0, 100) + "..." : article.Body))
+                            @if (!string.IsNullOrEmpty(article.Body) && article.Body.Length > 100)
                             {
                                 <a href="/readmore/@article.ArticleId" class="more-link">more...</a>
                             }
@@ -66,11 +66,13 @@
         private void FilterArticles()
     {
         // Simulated filtering logic (replace with API call)
-        articles = articles.Where(a =>
-            (!StartDate.HasValue || a.CreateDate >= StartDate.Value) &&
-            (!EndDate.HasValue || a.CreateDate <= EndDate.Value)
-        ).ToList();
+        if (articles != null)
+        {
+            articles = articles.Where(a =>
+                (!StartDate.HasValue || a.CreateDate >= StartDate.Value) &&
+                (!EndDate.HasValue || a.CreateDate <= EndDate.Value)
+            ).ToList();
+        }
     }
 
-    [Inject] NavigationManager Navigation { get; set; }
 }
