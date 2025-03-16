@@ -30,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>gfipzi8d4t</Fingerprint>
-      <Integrity>jHQ8GkNKigYcfHIKU30vNfmJyibdRtfP0fiRFK9TOUY=</Integrity>
+      <Fingerprint>0cn9nqa8w4</Fingerprint>
+      <Integrity>YJ3BA7Lq6CE4Mmx3LG6hNIUi5JwAbmIs2u1+5ksqm/4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\articles.csv'))</OriginalItemSpec>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/hO70k0F7D7jfcYZsseWn9rfAkyOEunrTeq868XDj6k=",
+  "Hash": "sBml/fvyIbm4cAtVj/RoFwkTrrTk02vmUV3wIGEVl8o=",
   "Source": "BloggerBlazorServer",
   "BasePath": "_content/BloggerBlazorServer",
   "Mode": "Default",
@@ -332,12 +332,12 @@
       "OriginalItemSpec": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\BloggerBlazorServer\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\BloggerBlazorServer\\obj\\Debug\\net9.0\\compressed\\8w195eofdm-gfipzi8d4t.gz",
+      "Identity": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\BloggerBlazorServer\\obj\\Debug\\net9.0\\compressed\\8w195eofdm-0cn9nqa8w4.gz",
       "SourceId": "BloggerBlazorServer",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\BloggerBlazorServer\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/BloggerBlazorServer",
-      "RelativePath": "articles#[.{fingerprint=gfipzi8d4t}]?.csv.gz",
+      "RelativePath": "articles#[.{fingerprint=0cn9nqa8w4}]?.csv.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -346,8 +346,8 @@
       "RelatedAsset": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\BloggerBlazorServer\\wwwroot\\articles.csv",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "jr14hbcp8j",
-      "Integrity": "754I7U8qmfNRCME2T1rBeBj9S3J0Xbzzhlovv7Kjpdo=",
+      "Fingerprint": "1xfajm7fps",
+      "Integrity": "Fapwe8+rCYBlAMIv2Xmu5y0Ia5QxeJ10cp4oFitezvs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\BloggerBlazorServer\\wwwroot\\articles.csv"
@@ -1186,8 +1186,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "gfipzi8d4t",
-      "Integrity": "jHQ8GkNKigYcfHIKU30vNfmJyibdRtfP0fiRFK9TOUY=",
+      "Fingerprint": "0cn9nqa8w4",
+      "Integrity": "YJ3BA7Lq6CE4Mmx3LG6hNIUi5JwAbmIs2u1+5ksqm/4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\articles.csv"
@@ -2765,13 +2765,13 @@
       ]
     },
     {
-      "Route": "articles.csv",
-      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\BloggerBlazorServer\\obj\\Debug\\net9.0\\compressed\\8w195eofdm-gfipzi8d4t.gz",
+      "Route": "articles.0cn9nqa8w4.csv",
+      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\BloggerBlazorServer\\obj\\Debug\\net9.0\\compressed\\8w195eofdm-0cn9nqa8w4.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001600000000"
+          "Quality": "0.001602564103"
         }
       ],
       "ResponseHeaders": [
@@ -2781,19 +2781,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "624"
+          "Value": "623"
         },
         {
           "Name": "ETag",
-          "Value": "\"754I7U8qmfNRCME2T1rBeBj9S3J0Xbzzhlovv7Kjpdo=\""
+          "Value": "\"Fapwe8+rCYBlAMIv2Xmu5y0Ia5QxeJ10cp4oFitezvs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 07 Mar 2025 22:29:53 GMT"
+          "Value": "Sun, 16 Mar 2025 05:03:34 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -2809,18 +2809,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"jHQ8GkNKigYcfHIKU30vNfmJyibdRtfP0fiRFK9TOUY=\""
+          "Value": "W/\"YJ3BA7Lq6CE4Mmx3LG6hNIUi5JwAbmIs2u1+5ksqm/4=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "0cn9nqa8w4"
+        },
+        {
+          "Name": "label",
+          "Value": "articles.csv"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-jHQ8GkNKigYcfHIKU30vNfmJyibdRtfP0fiRFK9TOUY="
+          "Value": "sha256-YJ3BA7Lq6CE4Mmx3LG6hNIUi5JwAbmIs2u1+5ksqm/4="
         }
       ]
     },
     {
-      "Route": "articles.csv",
+      "Route": "articles.0cn9nqa8w4.csv",
       "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\BloggerBlazorServer\\wwwroot\\articles.csv",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2830,7 +2838,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1121"
+          "Value": "1119"
         },
         {
           "Name": "Content-Type",
@@ -2838,121 +2846,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"jHQ8GkNKigYcfHIKU30vNfmJyibdRtfP0fiRFK9TOUY=\""
+          "Value": "\"YJ3BA7Lq6CE4Mmx3LG6hNIUi5JwAbmIs2u1+5ksqm/4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 07 Mar 2025 22:29:53 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-jHQ8GkNKigYcfHIKU30vNfmJyibdRtfP0fiRFK9TOUY="
-        }
-      ]
-    },
-    {
-      "Route": "articles.csv.gz",
-      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\BloggerBlazorServer\\obj\\Debug\\net9.0\\compressed\\8w195eofdm-gfipzi8d4t.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "624"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/csv"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"754I7U8qmfNRCME2T1rBeBj9S3J0Xbzzhlovv7Kjpdo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 07 Mar 2025 22:29:53 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-754I7U8qmfNRCME2T1rBeBj9S3J0Xbzzhlovv7Kjpdo="
-        }
-      ]
-    },
-    {
-      "Route": "articles.gfipzi8d4t.csv",
-      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\BloggerBlazorServer\\obj\\Debug\\net9.0\\compressed\\8w195eofdm-gfipzi8d4t.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001600000000"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "624"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"754I7U8qmfNRCME2T1rBeBj9S3J0Xbzzhlovv7Kjpdo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 07 Mar 2025 22:29:53 GMT"
+          "Value": "Sun, 16 Mar 2025 05:03:34 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/csv"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"jHQ8GkNKigYcfHIKU30vNfmJyibdRtfP0fiRFK9TOUY=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "gfipzi8d4t"
+          "Value": "0cn9nqa8w4"
         },
         {
           "Name": "label",
@@ -2960,13 +2868,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-jHQ8GkNKigYcfHIKU30vNfmJyibdRtfP0fiRFK9TOUY="
+          "Value": "sha256-YJ3BA7Lq6CE4Mmx3LG6hNIUi5JwAbmIs2u1+5ksqm/4="
         }
       ]
     },
     {
-      "Route": "articles.gfipzi8d4t.csv",
-      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\BloggerBlazorServer\\wwwroot\\articles.csv",
+      "Route": "articles.0cn9nqa8w4.csv.gz",
+      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\BloggerBlazorServer\\obj\\Debug\\net9.0\\compressed\\8w195eofdm-0cn9nqa8w4.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2975,7 +2883,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1121"
+          "Value": "623"
         },
         {
           "Name": "Content-Type",
@@ -2983,56 +2891,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"jHQ8GkNKigYcfHIKU30vNfmJyibdRtfP0fiRFK9TOUY=\""
+          "Value": "\"Fapwe8+rCYBlAMIv2Xmu5y0Ia5QxeJ10cp4oFitezvs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 07 Mar 2025 22:29:53 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "gfipzi8d4t"
-        },
-        {
-          "Name": "label",
-          "Value": "articles.csv"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-jHQ8GkNKigYcfHIKU30vNfmJyibdRtfP0fiRFK9TOUY="
-        }
-      ]
-    },
-    {
-      "Route": "articles.gfipzi8d4t.csv.gz",
-      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\BloggerBlazorServer\\obj\\Debug\\net9.0\\compressed\\8w195eofdm-gfipzi8d4t.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "624"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/csv"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"754I7U8qmfNRCME2T1rBeBj9S3J0Xbzzhlovv7Kjpdo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 07 Mar 2025 22:29:53 GMT"
+          "Value": "Sun, 16 Mar 2025 05:03:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3050,7 +2913,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "gfipzi8d4t"
+          "Value": "0cn9nqa8w4"
         },
         {
           "Name": "label",
@@ -3058,7 +2921,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-754I7U8qmfNRCME2T1rBeBj9S3J0Xbzzhlovv7Kjpdo="
+          "Value": "sha256-Fapwe8+rCYBlAMIv2Xmu5y0Ia5QxeJ10cp4oFitezvs="
+        }
+      ]
+    },
+    {
+      "Route": "articles.csv",
+      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\BloggerBlazorServer\\obj\\Debug\\net9.0\\compressed\\8w195eofdm-0cn9nqa8w4.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001602564103"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "623"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Fapwe8+rCYBlAMIv2Xmu5y0Ia5QxeJ10cp4oFitezvs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 05:03:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"YJ3BA7Lq6CE4Mmx3LG6hNIUi5JwAbmIs2u1+5ksqm/4=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YJ3BA7Lq6CE4Mmx3LG6hNIUi5JwAbmIs2u1+5ksqm/4="
+        }
+      ]
+    },
+    {
+      "Route": "articles.csv",
+      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\BloggerBlazorServer\\wwwroot\\articles.csv",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1119"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YJ3BA7Lq6CE4Mmx3LG6hNIUi5JwAbmIs2u1+5ksqm/4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 05:03:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YJ3BA7Lq6CE4Mmx3LG6hNIUi5JwAbmIs2u1+5ksqm/4="
+        }
+      ]
+    },
+    {
+      "Route": "articles.csv.gz",
+      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\BloggerBlazorServer\\obj\\Debug\\net9.0\\compressed\\8w195eofdm-0cn9nqa8w4.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "623"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/csv"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Fapwe8+rCYBlAMIv2Xmu5y0Ia5QxeJ10cp4oFitezvs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 05:03:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Fapwe8+rCYBlAMIv2Xmu5y0Ia5QxeJ10cp4oFitezvs="
         }
       ]
     },

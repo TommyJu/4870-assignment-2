@@ -261,7 +261,6 @@ C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\Blogge
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\BloggerBlazorServer\obj\Debug\net9.0\BloggerBlazorServer.pdb
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\BloggerBlazorServer\obj\Debug\net9.0\BloggerBlazorServer.genruntimeconfig.cache
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\BloggerBlazorServer\obj\Debug\net9.0\ref\BloggerBlazorServer.dll
-C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\BloggerBlazorServer\obj\Debug\net9.0\compressed\8w195eofdm-gfipzi8d4t.gz
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\BloggerBlazorServer\bin\Debug\net9.0\Microsoft.AspNetCore.Authorization.dll
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\BloggerBlazorServer\bin\Debug\net9.0\Microsoft.AspNetCore.Components.dll
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\BloggerBlazorServer\bin\Debug\net9.0\Microsoft.AspNetCore.Components.Forms.dll
@@ -272,3 +271,4 @@ C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\Blogge
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\BloggerBlazorServer\obj\Debug\net9.0\compressed\unlu0xluo6-eu7w3d5g1a.gz
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\BloggerBlazorServer\obj\Debug\net9.0\compressed\3gin1ph7ub-25o87uqmvr.gz
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\BloggerBlazorServer\obj\Debug\net9.0\compressed\vqpoe5jia1-lstnufqge8.gz
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\BloggerBlazorServer\obj\Debug\net9.0\compressed\8w195eofdm-0cn9nqa8w4.gz

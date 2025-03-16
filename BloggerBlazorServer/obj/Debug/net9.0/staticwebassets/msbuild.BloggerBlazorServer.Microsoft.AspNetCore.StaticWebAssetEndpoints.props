@@ -12,17 +12,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"khy4lop6wu"},{"Name":"integrity","Value":"sha256-aNPcLFwdCCGS2v1guSR64Htd4Ly5uclT7taAptnMPbs="},{"Name":"label","Value":"_content/BloggerBlazorServer/app.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2900"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022aNPcLFwdCCGS2v1guSR64Htd4Ly5uclT7taAptnMPbs=\u0022"},{"Name":"Last-Modified","Value":"Fri, 14 Mar 2025 20:45:29 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BloggerBlazorServer/articles.0cn9nqa8w4.csv">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\articles.csv'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"0cn9nqa8w4"},{"Name":"integrity","Value":"sha256-YJ3BA7Lq6CE4Mmx3LG6hNIUi5JwAbmIs2u1\u002B5ksqm/4="},{"Name":"label","Value":"_content/BloggerBlazorServer/articles.csv"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1119"},{"Name":"Content-Type","Value":"text/csv"},{"Name":"ETag","Value":"\u0022YJ3BA7Lq6CE4Mmx3LG6hNIUi5JwAbmIs2u1\u002B5ksqm/4=\u0022"},{"Name":"Last-Modified","Value":"Sun, 16 Mar 2025 05:03:34 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/BloggerBlazorServer/articles.csv">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\articles.csv'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-jHQ8GkNKigYcfHIKU30vNfmJyibdRtfP0fiRFK9TOUY="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1121"},{"Name":"Content-Type","Value":"text/csv"},{"Name":"ETag","Value":"\u0022jHQ8GkNKigYcfHIKU30vNfmJyibdRtfP0fiRFK9TOUY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 07 Mar 2025 22:29:53 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/BloggerBlazorServer/articles.gfipzi8d4t.csv">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\articles.csv'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"gfipzi8d4t"},{"Name":"integrity","Value":"sha256-jHQ8GkNKigYcfHIKU30vNfmJyibdRtfP0fiRFK9TOUY="},{"Name":"label","Value":"_content/BloggerBlazorServer/articles.csv"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1121"},{"Name":"Content-Type","Value":"text/csv"},{"Name":"ETag","Value":"\u0022jHQ8GkNKigYcfHIKU30vNfmJyibdRtfP0fiRFK9TOUY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 07 Mar 2025 22:29:53 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YJ3BA7Lq6CE4Mmx3LG6hNIUi5JwAbmIs2u1\u002B5ksqm/4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1119"},{"Name":"Content-Type","Value":"text/csv"},{"Name":"ETag","Value":"\u0022YJ3BA7Lq6CE4Mmx3LG6hNIUi5JwAbmIs2u1\u002B5ksqm/4=\u0022"},{"Name":"Last-Modified","Value":"Sun, 16 Mar 2025 05:03:34 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/BloggerBlazorServer/BloggerBlazorServer.av0l4acczs.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\BloggerBlazorServer.av0l4acczs.bundle.scp.css'))</AssetFile>
