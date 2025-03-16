@@ -24,46 +24,44 @@
         }
         else
         {
-            <QuickGrid Items="@articles.AsQueryable()" TGridItem="Article" class="table">
+            <QuickGrid Items="@articles.AsQueryable()" TGridItem="Article" class="table" Pagination="@pagination">
                 <PropertyColumn Property="@(_ => _.Title)" />
-                <PropertyColumn Property="@(_ => _.UserName)" Title="Author"/>
-                <PropertyColumn Property="@(_ => _.CreateDate)" Format="d" Title="Date"/>
+                <PropertyColumn Property="@(_ => _.UserName)" Title="Author" />
+                <PropertyColumn Property="@(_ => _.CreateDate)" Format="d" Title="Date" />
                 <TemplateColumn Title="Content">
 
-                        <p>
-                             @(context.Body != null && context.Body.Length > 100 ? context.Body.Substring(0, 100) + "..." : context.Body ?? string.Empty)
-                             @if(context.Body.Length > 100)
-                             {
-                                <a href="/readmore/@context.ArticleId" class="more-link">Read more</a>
-                             }
-                        </p>
+                    <p>
+                        @(context.Body != null && context.Body.Length > 100 ? context.Body.Substring(0, 100) + "..." :
+                                            context.Body ?? string.Empty)
+                    @if (context.Body != null && context.Body.Length > 100)
+                        {
+                            <a href="/readmore/@context.ArticleId" class="more-link">Read more</a>
+                        }
+                    </p>
                 </TemplateColumn>
             </QuickGrid>
+            <Paginator State="@pagination" />
         }
     </div>
 </div>
 
 @code {
-    private DateTime? StartDate { get; set; }
-    private DateTime? EndDate { get; set; }
     private List<Article>? articles;
 
     protected override async Task OnInitializedAsync()
     {
-        // Simulating fetching articles (replace with API call)
+        // Fetch articles using the API client
         articles = (await articleApiClient.GetArticlesAsync()).ToList();
-    }
 
-    private void FilterArticles()
-    {
-        // Simulated filtering logic (replace with API call)
+        // Filter articles by date range (only show most recent articles)
         if (articles != null)
         {
-            articles = articles.Where(a =>
-            (!StartDate.HasValue || a.CreateDate >= StartDate.Value) &&
-            (!EndDate.HasValue || a.CreateDate <= EndDate.Value)
-            ).ToList();
+            DateTime currentUtcDate = DateTime.UtcNow;
+
+            articles = articles.Where(a => currentUtcDate >= a.StartDate && currentUtcDate < a.EndDate).ToList();
         }
     }
+
+    private PaginationState pagination = new PaginationState { ItemsPerPage = 5 };
 
 }
