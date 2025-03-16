@@ -55,6 +55,12 @@ app.MapGet("/articles", async (ApplicationDbContext db) =>
     return articles;
 });
 
+app.MapGet("/articles/{id}", async (ApplicationDbContext db, int id) =>
+{
+    var article = await db.Article.FindAsync(id);
+    return article is not null ? Results.Ok(article) : Results.NotFound();
+});
+
 var summaries = new[]
 {
     "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"

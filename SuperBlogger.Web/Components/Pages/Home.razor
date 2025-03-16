@@ -5,7 +5,7 @@
 
 @inject ArticleApiClient articleApiClient
 
-<link rel="stylesheet" href="home.css" asp-append-version="true" />
+<link rel="stylesheet" href="style.css" asp-append-version="true" />
 
 <div class="text-center">
 <div>
@@ -38,7 +38,7 @@
                             @(article.Body.Length > 100 ? article.Body.Substring(0, 100) + "..." : article.Body)
                             @if (article.Body.Length > 100)
                             {
-                                <a href="readmore/@article.ArticleId" class="more-link">more...</a>
+                                <a href="/readmore/@article.ArticleId" class="more-link">more...</a>
                             }
                         </p>
                     </div>

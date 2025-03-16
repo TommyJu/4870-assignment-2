@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+yNAPUCtww7TVFSigrYrxx8W1WOi1TmNaik4NeBdkTk=",
+  "Hash": "Z3KQr+UG5F6S5LtaO0FLuYe4ZpvYYH8lu6T1BNgqFtg=",
   "Source": "SuperBlogger.Web",
   "BasePath": "_content/SuperBlogger.Web",
   "Mode": "Default",
@@ -36,27 +36,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\SuperBlogger.Web.bundle.scp.css"
-    },
-    {
-      "Identity": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\elbbpmaar9-q5k335p759.gz",
-      "SourceId": "SuperBlogger.Web",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\",
-      "BasePath": "_content/SuperBlogger.Web",
-      "RelativePath": "home#[.{fingerprint=q5k335p759}]?.css.gz",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\wwwroot\\home.css",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "Fingerprint": "fu9ssqdnoa",
-      "Integrity": "1/SBOgflukptjbdrzCNUJlKLsyu3uvAx/JC78KX0QCM=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\wwwroot\\home.css"
     },
     {
       "Identity": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\j24cel3r6w-eti6g5r3hu.gz",
@@ -99,6 +78,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\wwwroot\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\p7763y1arf-q5k335p759.gz",
+      "SourceId": "SuperBlogger.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/SuperBlogger.Web",
+      "RelativePath": "style#[.{fingerprint=q5k335p759}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\wwwroot\\style.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "fu9ssqdnoa",
+      "Integrity": "1/SBOgflukptjbdrzCNUJlKLsyu3uvAx/JC78KX0QCM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\wwwroot\\style.css"
     },
     {
       "Identity": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\sarufxvjf9-lsmoadmmt2.gz",
@@ -269,12 +269,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.png"
     },
     {
-      "Identity": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\wwwroot\\home.css",
+      "Identity": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\wwwroot\\style.css",
       "SourceId": "SuperBlogger.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\wwwroot\\",
       "BasePath": "_content/SuperBlogger.Web",
-      "RelativePath": "home#[.{fingerprint}]?.css",
+      "RelativePath": "style#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -287,7 +287,7 @@
       "Integrity": "zu+ZT1dLR/Zbw2kLQlLQAotJVJHnEe/2MsNZYOSVvVs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\home.css"
+      "OriginalItemSpec": "wwwroot\\style.css"
     }
   ],
   "Endpoints": [
@@ -1268,8 +1268,8 @@
       ]
     },
     {
-      "Route": "home.css",
-      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\elbbpmaar9-q5k335p759.gz",
+      "Route": "style.css",
+      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\p7763y1arf-q5k335p759.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1323,8 +1323,8 @@
       ]
     },
     {
-      "Route": "home.css",
-      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\wwwroot\\home.css",
+      "Route": "style.css",
+      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\wwwroot\\style.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1360,8 +1360,8 @@
       ]
     },
     {
-      "Route": "home.css.gz",
-      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\elbbpmaar9-q5k335p759.gz",
+      "Route": "style.css.gz",
+      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\p7763y1arf-q5k335p759.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1405,8 +1405,8 @@
       ]
     },
     {
-      "Route": "home.q5k335p759.css",
-      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\elbbpmaar9-q5k335p759.gz",
+      "Route": "style.q5k335p759.css",
+      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\p7763y1arf-q5k335p759.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1459,7 +1459,7 @@
         },
         {
           "Name": "label",
-          "Value": "home.css"
+          "Value": "style.css"
         },
         {
           "Name": "integrity",
@@ -1468,8 +1468,8 @@
       ]
     },
     {
-      "Route": "home.q5k335p759.css",
-      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\wwwroot\\home.css",
+      "Route": "style.q5k335p759.css",
+      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\wwwroot\\style.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1504,7 +1504,7 @@
         },
         {
           "Name": "label",
-          "Value": "home.css"
+          "Value": "style.css"
         },
         {
           "Name": "integrity",
@@ -1513,8 +1513,8 @@
       ]
     },
     {
-      "Route": "home.q5k335p759.css.gz",
-      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\elbbpmaar9-q5k335p759.gz",
+      "Route": "style.q5k335p759.css.gz",
+      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\p7763y1arf-q5k335p759.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1557,7 +1557,7 @@
         },
         {
           "Name": "label",
-          "Value": "home.css.gz"
+          "Value": "style.css.gz"
         },
         {
           "Name": "integrity",

@@ -24,4 +24,9 @@ public class ArticleApiClient(HttpClient httpClient)
 
         return articles?.ToArray() ?? [];
     }
+
+    public async Task<Article?> GetArticleByIdAsync(int articleId)
+    {
+        return await httpClient.GetFromJsonAsync<Article>($"/articles/{articleId}");
+    }
 };

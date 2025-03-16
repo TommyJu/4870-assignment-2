@@ -1277,8 +1277,8 @@
       ]
     },
     {
-      "Route": "home.css",
-      "AssetFile": "home.css.gz",
+      "Route": "style.css",
+      "AssetFile": "style.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1332,8 +1332,8 @@
       ]
     },
     {
-      "Route": "home.css",
-      "AssetFile": "home.css",
+      "Route": "style.css",
+      "AssetFile": "style.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1369,8 +1369,8 @@
       ]
     },
     {
-      "Route": "home.css.gz",
-      "AssetFile": "home.css.gz",
+      "Route": "style.css.gz",
+      "AssetFile": "style.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1414,8 +1414,8 @@
       ]
     },
     {
-      "Route": "home.q5k335p759.css",
-      "AssetFile": "home.css.gz",
+      "Route": "style.q5k335p759.css",
+      "AssetFile": "style.css.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1472,13 +1472,13 @@
         },
         {
           "Name": "label",
-          "Value": "home.css"
+          "Value": "style.css"
         }
       ]
     },
     {
-      "Route": "home.q5k335p759.css",
-      "AssetFile": "home.css",
+      "Route": "style.q5k335p759.css",
+      "AssetFile": "style.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1517,13 +1517,13 @@
         },
         {
           "Name": "label",
-          "Value": "home.css"
+          "Value": "style.css"
         }
       ]
     },
     {
-      "Route": "home.q5k335p759.css.gz",
-      "AssetFile": "home.css.gz",
+      "Route": "style.q5k335p759.css.gz",
+      "AssetFile": "style.css.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1570,7 +1570,7 @@
         },
         {
           "Name": "label",
-          "Value": "home.css.gz"
+          "Value": "style.css.gz"
         }
       ]
     }
