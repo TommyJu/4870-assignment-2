@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3TjUyCxscTxZOnc+eX548k6O1b4O9YzA0f2msmdQcHo=",
+  "Hash": "+yNAPUCtww7TVFSigrYrxx8W1WOi1TmNaik4NeBdkTk=",
   "Source": "SuperBlogger.Web",
   "BasePath": "_content/SuperBlogger.Web",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\1o72vv5ydf-q37cryydl3.gz",
+      "Identity": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\1o72vv5ydf-eti6g5r3hu.gz",
       "SourceId": "SuperBlogger.Web",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/SuperBlogger.Web",
-      "RelativePath": "SuperBlogger.Web#[.{fingerprint=q37cryydl3}]!.bundle.scp.css.gz",
+      "RelativePath": "SuperBlogger.Web#[.{fingerprint=eti6g5r3hu}]!.bundle.scp.css.gz",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Alternative",
@@ -31,19 +31,40 @@
       "RelatedAsset": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\SuperBlogger.Web.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "qx0c6lm07r",
-      "Integrity": "QtZP38m6zBeN3hu9l/neVJg59FVZ8DbSF5qr74M3vF4=",
+      "Fingerprint": "735kd494rl",
+      "Integrity": "w6PlcwFg6j5eQkJGPSGpbG0dpGUPvyOKm/ncnNim4f8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\SuperBlogger.Web.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\j24cel3r6w-q37cryydl3.gz",
+      "Identity": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\elbbpmaar9-q5k335p759.gz",
+      "SourceId": "SuperBlogger.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/SuperBlogger.Web",
+      "RelativePath": "home#[.{fingerprint=q5k335p759}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\wwwroot\\home.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "fu9ssqdnoa",
+      "Integrity": "1/SBOgflukptjbdrzCNUJlKLsyu3uvAx/JC78KX0QCM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\wwwroot\\home.css"
+    },
+    {
+      "Identity": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\j24cel3r6w-eti6g5r3hu.gz",
       "SourceId": "SuperBlogger.Web",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/SuperBlogger.Web",
-      "RelativePath": "SuperBlogger.Web#[.{fingerprint=q37cryydl3}]?.styles.css.gz",
+      "RelativePath": "SuperBlogger.Web#[.{fingerprint=eti6g5r3hu}]?.styles.css.gz",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Alternative",
@@ -52,8 +73,8 @@
       "RelatedAsset": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\scopedcss\\bundle\\SuperBlogger.Web.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "qx0c6lm07r",
-      "Integrity": "QtZP38m6zBeN3hu9l/neVJg59FVZ8DbSF5qr74M3vF4=",
+      "Fingerprint": "735kd494rl",
+      "Integrity": "w6PlcwFg6j5eQkJGPSGpbG0dpGUPvyOKm/ncnNim4f8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\scopedcss\\bundle\\SuperBlogger.Web.styles.css"
@@ -136,8 +157,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "q37cryydl3",
-      "Integrity": "Ci5/aPqoVQmmH0DdNeLjyBltUHJBHscg8m0M5y8xqcs=",
+      "Fingerprint": "eti6g5r3hu",
+      "Integrity": "Pqcx0tnEeCLw0CoPuvuMwGwZt25JxIDqi6ThUJ3Vkf4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\scopedcss\\bundle\\SuperBlogger.Web.styles.css"
@@ -157,8 +178,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "q37cryydl3",
-      "Integrity": "Ci5/aPqoVQmmH0DdNeLjyBltUHJBHscg8m0M5y8xqcs=",
+      "Fingerprint": "eti6g5r3hu",
+      "Integrity": "Pqcx0tnEeCLw0CoPuvuMwGwZt25JxIDqi6ThUJ3Vkf4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\SuperBlogger.Web.bundle.scp.css"
@@ -246,6 +267,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\wwwroot\\home.css",
+      "SourceId": "SuperBlogger.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\wwwroot\\",
+      "BasePath": "_content/SuperBlogger.Web",
+      "RelativePath": "home#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "q5k335p759",
+      "Integrity": "zu+ZT1dLR/Zbw2kLQlLQAotJVJHnEe/2MsNZYOSVvVs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\home.css"
     }
   ],
   "Endpoints": [
@@ -1226,13 +1268,13 @@
       ]
     },
     {
-      "Route": "SuperBlogger.Web.bundle.scp.css",
-      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\1o72vv5ydf-q37cryydl3.gz",
+      "Route": "home.css",
+      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\elbbpmaar9-q5k335p759.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000573065903"
+          "Quality": "0.003597122302"
         }
       ],
       "ResponseHeaders": [
@@ -1242,15 +1284,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1744"
+          "Value": "277"
         },
         {
           "Name": "ETag",
-          "Value": "\"QtZP38m6zBeN3hu9l/neVJg59FVZ8DbSF5qr74M3vF4=\""
+          "Value": "\"1/SBOgflukptjbdrzCNUJlKLsyu3uvAx/JC78KX0QCM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 22:08:07 GMT"
+          "Value": "Sun, 16 Mar 2025 01:57:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1270,13 +1312,311 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Ci5/aPqoVQmmH0DdNeLjyBltUHJBHscg8m0M5y8xqcs=\""
+          "Value": "W/\"zu+ZT1dLR/Zbw2kLQlLQAotJVJHnEe/2MsNZYOSVvVs=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Ci5/aPqoVQmmH0DdNeLjyBltUHJBHscg8m0M5y8xqcs="
+          "Value": "sha256-zu+ZT1dLR/Zbw2kLQlLQAotJVJHnEe/2MsNZYOSVvVs="
+        }
+      ]
+    },
+    {
+      "Route": "home.css",
+      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\wwwroot\\home.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "544"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zu+ZT1dLR/Zbw2kLQlLQAotJVJHnEe/2MsNZYOSVvVs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 01:57:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zu+ZT1dLR/Zbw2kLQlLQAotJVJHnEe/2MsNZYOSVvVs="
+        }
+      ]
+    },
+    {
+      "Route": "home.css.gz",
+      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\elbbpmaar9-q5k335p759.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "277"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1/SBOgflukptjbdrzCNUJlKLsyu3uvAx/JC78KX0QCM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 01:57:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1/SBOgflukptjbdrzCNUJlKLsyu3uvAx/JC78KX0QCM="
+        }
+      ]
+    },
+    {
+      "Route": "home.q5k335p759.css",
+      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\elbbpmaar9-q5k335p759.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003597122302"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "277"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1/SBOgflukptjbdrzCNUJlKLsyu3uvAx/JC78KX0QCM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 01:57:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"zu+ZT1dLR/Zbw2kLQlLQAotJVJHnEe/2MsNZYOSVvVs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q5k335p759"
+        },
+        {
+          "Name": "label",
+          "Value": "home.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zu+ZT1dLR/Zbw2kLQlLQAotJVJHnEe/2MsNZYOSVvVs="
+        }
+      ]
+    },
+    {
+      "Route": "home.q5k335p759.css",
+      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\wwwroot\\home.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "544"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zu+ZT1dLR/Zbw2kLQlLQAotJVJHnEe/2MsNZYOSVvVs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 01:57:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q5k335p759"
+        },
+        {
+          "Name": "label",
+          "Value": "home.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zu+ZT1dLR/Zbw2kLQlLQAotJVJHnEe/2MsNZYOSVvVs="
+        }
+      ]
+    },
+    {
+      "Route": "home.q5k335p759.css.gz",
+      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\elbbpmaar9-q5k335p759.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "277"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1/SBOgflukptjbdrzCNUJlKLsyu3uvAx/JC78KX0QCM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 01:57:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q5k335p759"
+        },
+        {
+          "Name": "label",
+          "Value": "home.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1/SBOgflukptjbdrzCNUJlKLsyu3uvAx/JC78KX0QCM="
+        }
+      ]
+    },
+    {
+      "Route": "SuperBlogger.Web.bundle.scp.css",
+      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\1o72vv5ydf-eti6g5r3hu.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001287001287"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "776"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"w6PlcwFg6j5eQkJGPSGpbG0dpGUPvyOKm/ncnNim4f8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Mar 2025 01:49:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Pqcx0tnEeCLw0CoPuvuMwGwZt25JxIDqi6ThUJ3Vkf4=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Pqcx0tnEeCLw0CoPuvuMwGwZt25JxIDqi6ThUJ3Vkf4="
         }
       ]
     },
@@ -1291,7 +1631,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5800"
+          "Value": "2191"
         },
         {
           "Name": "Content-Type",
@@ -1299,11 +1639,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Ci5/aPqoVQmmH0DdNeLjyBltUHJBHscg8m0M5y8xqcs=\""
+          "Value": "\"Pqcx0tnEeCLw0CoPuvuMwGwZt25JxIDqi6ThUJ3Vkf4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 22:08:07 GMT"
+          "Value": "Sun, 16 Mar 2025 01:49:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1313,13 +1653,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Ci5/aPqoVQmmH0DdNeLjyBltUHJBHscg8m0M5y8xqcs="
+          "Value": "sha256-Pqcx0tnEeCLw0CoPuvuMwGwZt25JxIDqi6ThUJ3Vkf4="
         }
       ]
     },
     {
       "Route": "SuperBlogger.Web.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\1o72vv5ydf-q37cryydl3.gz",
+      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\1o72vv5ydf-eti6g5r3hu.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1328,7 +1668,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1744"
+          "Value": "776"
         },
         {
           "Name": "Content-Type",
@@ -1336,11 +1676,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"QtZP38m6zBeN3hu9l/neVJg59FVZ8DbSF5qr74M3vF4=\""
+          "Value": "\"w6PlcwFg6j5eQkJGPSGpbG0dpGUPvyOKm/ncnNim4f8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 22:08:07 GMT"
+          "Value": "Sun, 16 Mar 2025 01:49:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1358,18 +1698,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-QtZP38m6zBeN3hu9l/neVJg59FVZ8DbSF5qr74M3vF4="
+          "Value": "sha256-w6PlcwFg6j5eQkJGPSGpbG0dpGUPvyOKm/ncnNim4f8="
         }
       ]
     },
     {
-      "Route": "SuperBlogger.Web.q37cryydl3.bundle.scp.css",
-      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\1o72vv5ydf-q37cryydl3.gz",
+      "Route": "SuperBlogger.Web.eti6g5r3hu.bundle.scp.css",
+      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\1o72vv5ydf-eti6g5r3hu.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000573065903"
+          "Quality": "0.001287001287"
         }
       ],
       "ResponseHeaders": [
@@ -1379,15 +1719,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1744"
+          "Value": "776"
         },
         {
           "Name": "ETag",
-          "Value": "\"QtZP38m6zBeN3hu9l/neVJg59FVZ8DbSF5qr74M3vF4=\""
+          "Value": "\"w6PlcwFg6j5eQkJGPSGpbG0dpGUPvyOKm/ncnNim4f8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 22:08:07 GMT"
+          "Value": "Sun, 16 Mar 2025 01:49:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1407,13 +1747,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Ci5/aPqoVQmmH0DdNeLjyBltUHJBHscg8m0M5y8xqcs=\""
+          "Value": "W/\"Pqcx0tnEeCLw0CoPuvuMwGwZt25JxIDqi6ThUJ3Vkf4=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "q37cryydl3"
+          "Value": "eti6g5r3hu"
         },
         {
           "Name": "label",
@@ -1421,12 +1761,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Ci5/aPqoVQmmH0DdNeLjyBltUHJBHscg8m0M5y8xqcs="
+          "Value": "sha256-Pqcx0tnEeCLw0CoPuvuMwGwZt25JxIDqi6ThUJ3Vkf4="
         }
       ]
     },
     {
-      "Route": "SuperBlogger.Web.q37cryydl3.bundle.scp.css",
+      "Route": "SuperBlogger.Web.eti6g5r3hu.bundle.scp.css",
       "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\SuperBlogger.Web.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1436,7 +1776,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5800"
+          "Value": "2191"
         },
         {
           "Name": "Content-Type",
@@ -1444,11 +1784,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Ci5/aPqoVQmmH0DdNeLjyBltUHJBHscg8m0M5y8xqcs=\""
+          "Value": "\"Pqcx0tnEeCLw0CoPuvuMwGwZt25JxIDqi6ThUJ3Vkf4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 22:08:07 GMT"
+          "Value": "Sun, 16 Mar 2025 01:49:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1458,7 +1798,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "q37cryydl3"
+          "Value": "eti6g5r3hu"
         },
         {
           "Name": "label",
@@ -1466,13 +1806,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Ci5/aPqoVQmmH0DdNeLjyBltUHJBHscg8m0M5y8xqcs="
+          "Value": "sha256-Pqcx0tnEeCLw0CoPuvuMwGwZt25JxIDqi6ThUJ3Vkf4="
         }
       ]
     },
     {
-      "Route": "SuperBlogger.Web.q37cryydl3.bundle.scp.css.gz",
-      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\1o72vv5ydf-q37cryydl3.gz",
+      "Route": "SuperBlogger.Web.eti6g5r3hu.bundle.scp.css.gz",
+      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\1o72vv5ydf-eti6g5r3hu.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1481,7 +1821,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1744"
+          "Value": "776"
         },
         {
           "Name": "Content-Type",
@@ -1489,11 +1829,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"QtZP38m6zBeN3hu9l/neVJg59FVZ8DbSF5qr74M3vF4=\""
+          "Value": "\"w6PlcwFg6j5eQkJGPSGpbG0dpGUPvyOKm/ncnNim4f8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 22:08:07 GMT"
+          "Value": "Sun, 16 Mar 2025 01:49:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1511,7 +1851,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "q37cryydl3"
+          "Value": "eti6g5r3hu"
         },
         {
           "Name": "label",
@@ -1519,18 +1859,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-QtZP38m6zBeN3hu9l/neVJg59FVZ8DbSF5qr74M3vF4="
+          "Value": "sha256-w6PlcwFg6j5eQkJGPSGpbG0dpGUPvyOKm/ncnNim4f8="
         }
       ]
     },
     {
-      "Route": "SuperBlogger.Web.q37cryydl3.styles.css",
-      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\j24cel3r6w-q37cryydl3.gz",
+      "Route": "SuperBlogger.Web.eti6g5r3hu.styles.css",
+      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\j24cel3r6w-eti6g5r3hu.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000573065903"
+          "Quality": "0.001287001287"
         }
       ],
       "ResponseHeaders": [
@@ -1540,15 +1880,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1744"
+          "Value": "776"
         },
         {
           "Name": "ETag",
-          "Value": "\"QtZP38m6zBeN3hu9l/neVJg59FVZ8DbSF5qr74M3vF4=\""
+          "Value": "\"w6PlcwFg6j5eQkJGPSGpbG0dpGUPvyOKm/ncnNim4f8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 22:08:07 GMT"
+          "Value": "Sun, 16 Mar 2025 01:49:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1568,13 +1908,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Ci5/aPqoVQmmH0DdNeLjyBltUHJBHscg8m0M5y8xqcs=\""
+          "Value": "W/\"Pqcx0tnEeCLw0CoPuvuMwGwZt25JxIDqi6ThUJ3Vkf4=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "q37cryydl3"
+          "Value": "eti6g5r3hu"
         },
         {
           "Name": "label",
@@ -1582,12 +1922,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Ci5/aPqoVQmmH0DdNeLjyBltUHJBHscg8m0M5y8xqcs="
+          "Value": "sha256-Pqcx0tnEeCLw0CoPuvuMwGwZt25JxIDqi6ThUJ3Vkf4="
         }
       ]
     },
     {
-      "Route": "SuperBlogger.Web.q37cryydl3.styles.css",
+      "Route": "SuperBlogger.Web.eti6g5r3hu.styles.css",
       "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\scopedcss\\bundle\\SuperBlogger.Web.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1597,7 +1937,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5800"
+          "Value": "2191"
         },
         {
           "Name": "Content-Type",
@@ -1605,11 +1945,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Ci5/aPqoVQmmH0DdNeLjyBltUHJBHscg8m0M5y8xqcs=\""
+          "Value": "\"Pqcx0tnEeCLw0CoPuvuMwGwZt25JxIDqi6ThUJ3Vkf4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 22:08:07 GMT"
+          "Value": "Sun, 16 Mar 2025 01:49:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1619,7 +1959,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "q37cryydl3"
+          "Value": "eti6g5r3hu"
         },
         {
           "Name": "label",
@@ -1627,13 +1967,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Ci5/aPqoVQmmH0DdNeLjyBltUHJBHscg8m0M5y8xqcs="
+          "Value": "sha256-Pqcx0tnEeCLw0CoPuvuMwGwZt25JxIDqi6ThUJ3Vkf4="
         }
       ]
     },
     {
-      "Route": "SuperBlogger.Web.q37cryydl3.styles.css.gz",
-      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\j24cel3r6w-q37cryydl3.gz",
+      "Route": "SuperBlogger.Web.eti6g5r3hu.styles.css.gz",
+      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\j24cel3r6w-eti6g5r3hu.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1642,7 +1982,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1744"
+          "Value": "776"
         },
         {
           "Name": "Content-Type",
@@ -1650,11 +1990,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"QtZP38m6zBeN3hu9l/neVJg59FVZ8DbSF5qr74M3vF4=\""
+          "Value": "\"w6PlcwFg6j5eQkJGPSGpbG0dpGUPvyOKm/ncnNim4f8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 22:08:07 GMT"
+          "Value": "Sun, 16 Mar 2025 01:49:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1672,7 +2012,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "q37cryydl3"
+          "Value": "eti6g5r3hu"
         },
         {
           "Name": "label",
@@ -1680,18 +2020,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-QtZP38m6zBeN3hu9l/neVJg59FVZ8DbSF5qr74M3vF4="
+          "Value": "sha256-w6PlcwFg6j5eQkJGPSGpbG0dpGUPvyOKm/ncnNim4f8="
         }
       ]
     },
     {
       "Route": "SuperBlogger.Web.styles.css",
-      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\j24cel3r6w-q37cryydl3.gz",
+      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\j24cel3r6w-eti6g5r3hu.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000573065903"
+          "Quality": "0.001287001287"
         }
       ],
       "ResponseHeaders": [
@@ -1701,15 +2041,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1744"
+          "Value": "776"
         },
         {
           "Name": "ETag",
-          "Value": "\"QtZP38m6zBeN3hu9l/neVJg59FVZ8DbSF5qr74M3vF4=\""
+          "Value": "\"w6PlcwFg6j5eQkJGPSGpbG0dpGUPvyOKm/ncnNim4f8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 22:08:07 GMT"
+          "Value": "Sun, 16 Mar 2025 01:49:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1729,13 +2069,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Ci5/aPqoVQmmH0DdNeLjyBltUHJBHscg8m0M5y8xqcs=\""
+          "Value": "W/\"Pqcx0tnEeCLw0CoPuvuMwGwZt25JxIDqi6ThUJ3Vkf4=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Ci5/aPqoVQmmH0DdNeLjyBltUHJBHscg8m0M5y8xqcs="
+          "Value": "sha256-Pqcx0tnEeCLw0CoPuvuMwGwZt25JxIDqi6ThUJ3Vkf4="
         }
       ]
     },
@@ -1750,7 +2090,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5800"
+          "Value": "2191"
         },
         {
           "Name": "Content-Type",
@@ -1758,11 +2098,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Ci5/aPqoVQmmH0DdNeLjyBltUHJBHscg8m0M5y8xqcs=\""
+          "Value": "\"Pqcx0tnEeCLw0CoPuvuMwGwZt25JxIDqi6ThUJ3Vkf4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 22:08:07 GMT"
+          "Value": "Sun, 16 Mar 2025 01:49:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1772,13 +2112,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Ci5/aPqoVQmmH0DdNeLjyBltUHJBHscg8m0M5y8xqcs="
+          "Value": "sha256-Pqcx0tnEeCLw0CoPuvuMwGwZt25JxIDqi6ThUJ3Vkf4="
         }
       ]
     },
     {
       "Route": "SuperBlogger.Web.styles.css.gz",
-      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\j24cel3r6w-q37cryydl3.gz",
+      "AssetFile": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\compressed\\j24cel3r6w-eti6g5r3hu.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1787,7 +2127,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1744"
+          "Value": "776"
         },
         {
           "Name": "Content-Type",
@@ -1795,11 +2135,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"QtZP38m6zBeN3hu9l/neVJg59FVZ8DbSF5qr74M3vF4=\""
+          "Value": "\"w6PlcwFg6j5eQkJGPSGpbG0dpGUPvyOKm/ncnNim4f8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Mar 2025 22:08:07 GMT"
+          "Value": "Sun, 16 Mar 2025 01:49:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1817,7 +2157,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-QtZP38m6zBeN3hu9l/neVJg59FVZ8DbSF5qr74M3vF4="
+          "Value": "sha256-w6PlcwFg6j5eQkJGPSGpbG0dpGUPvyOKm/ncnNim4f8="
         }
       ]
     }

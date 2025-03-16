@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\SuperBlogger.Web.bundle.scp.css",
-      "PackagePath": "staticwebassets\\SuperBlogger.Web.q37cryydl3.bundle.scp.css"
+      "PackagePath": "staticwebassets\\SuperBlogger.Web.eti6g5r3hu.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\wwwroot\\app.css",
@@ -19,6 +19,10 @@
     {
       "Id": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.Web\\wwwroot\\home.css",
+      "PackagePath": "staticwebassets\\home.css"
     },
     {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.SuperBlogger.Web.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

@@ -57,14 +57,11 @@ C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperB
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\obj\Debug\net9.0\SuperBlogger.Web.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\obj\Debug\net9.0\SuperBlogger.Web.sourcelink.json
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\obj\Debug\net9.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
-C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\obj\Debug\net9.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\obj\Debug\net9.0\scopedcss\bundle\SuperBlogger.Web.styles.css
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\obj\Debug\net9.0\scopedcss\projectbundle\SuperBlogger.Web.bundle.scp.css
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\obj\Debug\net9.0\compressed\sarufxvjf9-lsmoadmmt2.gz
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\obj\Debug\net9.0\compressed\yn8xs27kk9-6gzpyzhau4.gz
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\obj\Debug\net9.0\compressed\lh0c3kthds-8inm30yfxf.gz
-C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\obj\Debug\net9.0\compressed\j24cel3r6w-q37cryydl3.gz
-C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\obj\Debug\net9.0\compressed\1o72vv5ydf-q37cryydl3.gz
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\obj\Debug\net9.0\staticwebassets.build.endpoints.json
@@ -80,3 +77,8 @@ C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperB
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\obj\Debug\net9.0\SuperBlogger.Web.pdb
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\obj\Debug\net9.0\SuperBlogger.Web.genruntimeconfig.cache
 C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\obj\Debug\net9.0\ref\SuperBlogger.Web.dll
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\bin\Debug\net9.0\BloggerLibrary.dll
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\bin\Debug\net9.0\BloggerLibrary.pdb
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\obj\Debug\net9.0\compressed\j24cel3r6w-eti6g5r3hu.gz
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\obj\Debug\net9.0\compressed\1o72vv5ydf-eti6g5r3hu.gz
+C:\Users\tommy\cst-term-4\comp-4870\assignments\SuperBlogger\SuperBlogger\SuperBlogger.Web\obj\Debug\net9.0\compressed\elbbpmaar9-q5k335p759.gz

@@ -1,0 +1,27 @@
+.article-box {
+    border: 2px solid #000; /* Black border */
+    padding: 15px;
+    margin: 15px 0;
+    background-color: #fff; /* White background */
+}
+
+.article-title {
+    font-weight: bold;
+    color: #0d3b66; /* Dark blue color */
+}
+
+.article-meta {
+    font-weight: bold; /* 90% of the default font size */
+    color: #0d3b66;
+    font-style: italic;
+}
+
+.more-link {
+    color: #007bff; /* Blue color */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.more-link:hover {
+    text-decoration: underline;
+}

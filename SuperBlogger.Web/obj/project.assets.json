@@ -830,6 +830,16 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
+      "BloggerLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/BloggerLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BloggerLibrary.dll": {}
+        }
+      },
       "SuperBlogger.ServiceDefaults/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -2033,6 +2043,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "BloggerLibrary/1.0.0": {
+      "type": "project",
+      "path": "../BloggerLibrary/BloggerLibrary.csproj",
+      "msbuildProject": "../BloggerLibrary/BloggerLibrary.csproj"
+    },
     "SuperBlogger.ServiceDefaults/1.0.0": {
       "type": "project",
       "path": "../SuperBlogger.ServiceDefaults/SuperBlogger.ServiceDefaults.csproj",
@@ -2041,6 +2056,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "BloggerLibrary >= 1.0.0",
       "SuperBlogger.ServiceDefaults >= 1.0.0"
     ]
   },
@@ -2069,6 +2085,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\BloggerLibrary\\BloggerLibrary.csproj": {
+              "projectPath": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\BloggerLibrary\\BloggerLibrary.csproj"
+            },
             "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.ServiceDefaults\\SuperBlogger.ServiceDefaults.csproj": {
               "projectPath": "C:\\Users\\tommy\\cst-term-4\\comp-4870\\assignments\\SuperBlogger\\SuperBlogger\\SuperBlogger.ServiceDefaults\\SuperBlogger.ServiceDefaults.csproj"
             }
