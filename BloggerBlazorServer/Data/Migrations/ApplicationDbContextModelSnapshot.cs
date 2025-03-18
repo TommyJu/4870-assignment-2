@@ -48,66 +48,11 @@ namespace BloggerBlazorServer.Data.Migrations
                     b.Property<string>("Title")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("UserName")
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("ArticleId");
 
                     b.HasIndex("ContributorId");
 
                     b.ToTable("Articles");
-
-                    b.HasData(
-                        new
-                        {
-                            ArticleId = 1,
-                            Body = "There is a lot of hype around the new creatures known as doughcats in Riot's top-tier autobattle simulator, TFT.",
-                            CreateDate = new DateTime(2025, 3, 7, 14, 30, 45, 0, DateTimeKind.Unspecified),
-                            EndDate = new DateTime(2025, 3, 21, 14, 30, 45, 0, DateTimeKind.Unspecified),
-                            StartDate = new DateTime(2025, 3, 7, 14, 30, 45, 0, DateTimeKind.Unspecified),
-                            Title = "How Dough Cats are Taking Over the World Twice",
-                            UserName = "a@a.a"
-                        },
-                        new
-                        {
-                            ArticleId = 2,
-                            Body = "Artificial Intelligence is transforming how we interact with technology, from chatbots to personal assistants.",
-                            CreateDate = new DateTime(2025, 3, 8, 10, 15, 30, 0, DateTimeKind.Unspecified),
-                            EndDate = new DateTime(2025, 3, 22, 10, 15, 30, 0, DateTimeKind.Unspecified),
-                            StartDate = new DateTime(2025, 3, 8, 10, 15, 30, 0, DateTimeKind.Unspecified),
-                            Title = "The Rise of AI Companions",
-                            UserName = "c@c.c"
-                        },
-                        new
-                        {
-                            ArticleId = 3,
-                            Body = "Scientists are uncovering new marine species and mysteries hidden in the unexplored depths of the ocean.",
-                            CreateDate = new DateTime(2025, 3, 9, 9, 0, 0, 0, DateTimeKind.Unspecified),
-                            EndDate = new DateTime(2025, 3, 23, 9, 0, 0, 0, DateTimeKind.Unspecified),
-                            StartDate = new DateTime(2025, 3, 9, 9, 0, 0, 0, DateTimeKind.Unspecified),
-                            Title = "Exploring the Deep Ocean",
-                            UserName = "a@a.a"
-                        },
-                        new
-                        {
-                            ArticleId = 4,
-                            Body = "Space agencies and private companies are racing to establish a human presence on Mars within the next decade.",
-                            CreateDate = new DateTime(2025, 3, 10, 12, 45, 20, 0, DateTimeKind.Unspecified),
-                            EndDate = new DateTime(2025, 3, 24, 12, 45, 20, 0, DateTimeKind.Unspecified),
-                            StartDate = new DateTime(2025, 3, 10, 12, 45, 20, 0, DateTimeKind.Unspecified),
-                            Title = "Mars Colonization: The Next Step",
-                            UserName = "c@c.c"
-                        },
-                        new
-                        {
-                            ArticleId = 5,
-                            Body = "Researchers have made significant advancements in quantum computing, paving the way for solving complex problems.",
-                            CreateDate = new DateTime(2025, 3, 11, 16, 20, 10, 0, DateTimeKind.Unspecified),
-                            EndDate = new DateTime(2025, 3, 25, 16, 20, 10, 0, DateTimeKind.Unspecified),
-                            StartDate = new DateTime(2025, 3, 11, 16, 20, 10, 0, DateTimeKind.Unspecified),
-                            Title = "Quantum Computing Breakthroughs",
-                            UserName = "a@a.a"
-                        });
                 });
 
             modelBuilder.Entity("BlogLibrary.User", b =>
@@ -179,44 +124,6 @@ namespace BloggerBlazorServer.Data.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "cf3d436b-8f4e-40f2-b17a-40cae6cb4d35",
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "752b079b-54ac-4c75-bd6e-99a51c523dd4",
-                            Email = "a@a.a",
-                            EmailConfirmed = true,
-                            FirstName = "Med",
-                            LastName = "Hat",
-                            LockoutEnabled = false,
-                            NormalizedEmail = "A@A.A",
-                            NormalizedUserName = "A@A.A",
-                            PasswordHash = "AQAAAAIAAYagAAAAEJbcdxvvIR69SO98+fH7kPNwNQsM3UFX1Lyry/8beDQIH4N5wkkv6hyT2KWSKdd2Rw==",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "df77d8bf-a939-42e9-95cb-beb002e86825",
-                            TwoFactorEnabled = false,
-                            UserName = "a@a.a"
-                        },
-                        new
-                        {
-                            Id = "663eb119-ac89-441b-ab84-fe29d20d607e",
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "6a49d4cb-67d4-4970-a5b9-f740ed940f63",
-                            Email = "c@c.c",
-                            EmailConfirmed = true,
-                            FirstName = "Bruce",
-                            LastName = "Link",
-                            LockoutEnabled = false,
-                            NormalizedEmail = "C@C.C",
-                            NormalizedUserName = "C@C.C",
-                            PasswordHash = "AQAAAAIAAYagAAAAEAtVoXmHg+Ml3G8Ojz/wgFo7sP/RtZx57RN6+2+FhbHIMZ1QKPJwLXGJVwfOLlIcEw==",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "72609b1d-078b-486a-adee-877959d390e4",
-                            TwoFactorEnabled = false,
-                            UserName = "c@c.c"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -244,20 +151,6 @@ namespace BloggerBlazorServer.Data.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "admin",
-                            Name = "Admin",
-                            NormalizedName = "ADMIN"
-                        },
-                        new
-                        {
-                            Id = "contributor",
-                            Name = "Contributor",
-                            NormalizedName = "CONTRIBUTOR"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -374,7 +267,8 @@ namespace BloggerBlazorServer.Data.Migrations
                 {
                     b.HasOne("BlogLibrary.User", "Contributor")
                         .WithMany()
-                        .HasForeignKey("ContributorId");
+                        .HasForeignKey("ContributorId")
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("Contributor");
                 });

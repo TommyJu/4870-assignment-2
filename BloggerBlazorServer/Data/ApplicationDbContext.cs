@@ -15,15 +15,21 @@ public class ApplicationDbContext : IdentityDbContext<User, IdentityRole, string
     protected override void OnModelCreating(ModelBuilder builder) {
         base.OnModelCreating(builder);
 
-        DbSeeder dbSeeder = new();
-foreach (var article in dbSeeder.Articles)
-{
-    Console.WriteLine(article.Title);
-}
+        builder.Entity<Article>()
+            .HasOne(a => a.Contributor)
+            .WithMany()
+            .HasForeignKey(a => a.ContributorId)
+            .OnDelete(DeleteBehavior.Restrict);
 
-        builder.Entity<IdentityRole>().HasData(dbSeeder.Roles);
-        builder.Entity<User>().HasData(dbSeeder.Users);
-        builder.Entity<Article>().HasData(dbSeeder.Articles);
+        // DbSeeder dbSeeder = new();
+        // foreach (var article in dbSeeder.Articles)
+        // {
+        //     Console.WriteLine(article.Title);
+        // }
+
+        // builder.Entity<IdentityRole>().HasData(dbSeeder.Roles);
+        // builder.Entity<User>().HasData(dbSeeder.Users);
+        // builder.Entity<Article>().HasData(dbSeeder.Articles);
     }
     
 }

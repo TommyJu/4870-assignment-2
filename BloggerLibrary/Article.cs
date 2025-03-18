@@ -14,7 +14,10 @@ public class Article
     public DateTime? StartDate { get; set; }
     public DateTime? EndDate { get; set; }
 
-    [ForeignKey("Username")]
-    public string? UserName { get; set; }
+    [ForeignKey("Contributor")]
+    public string? ContributorId { get; set; }
     public User? Contributor { get; set; }
+
+    [NotMapped] 
+    public string? UserName => Contributor?.UserName;
 }

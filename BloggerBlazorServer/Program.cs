@@ -19,35 +19,35 @@ builder.Services.AddCascadingAuthenticationState();
 builder.Services.AddScoped<IdentityUserAccessor>();
 builder.Services.AddScoped<IdentityRedirectManager>();
 builder.Services.AddScoped<AuthenticationStateProvider, IdentityRevalidatingAuthenticationStateProvider>();
+builder.Services.AddScoped<RoleManager<IdentityRole>>();
 
-builder.Services.AddAuthentication(options =>
-    {
-        options.DefaultScheme = IdentityConstants.ApplicationScheme;
-        options.DefaultSignInScheme = IdentityConstants.ExternalScheme;
-    })
-    .AddIdentityCookies();
+// builder.Services.AddAuthentication(options =>
+//     {
+//         options.DefaultScheme = IdentityConstants.ApplicationScheme;
+//         options.DefaultSignInScheme = IdentityConstants.ExternalScheme;
+//     })
+//     .AddIdentityCookies();
 
 // var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 // builder.Services.AddDbContext<ApplicationDbContext>(options =>
 //     options.UseSqlServer(connectionString));
 // builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-builder.AddSqlServerDbContext<ApplicationDbContext>("blogdb");
 
-// var connectionString = Environment.GetEnvironmentVariable("ConnectionStrings__blogdb");
-// if (connectionString == null) {
-//     // no Aspire
-//     Console.WriteLine("Connection string 'blogdb' not found. Using default connection string.");
-//     connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-//     if (connectionString == null) {
-//         throw new InvalidOperationException("Connection string not found.");
-//     }
-// }
+var connectionString = Environment.GetEnvironmentVariable("ConnectionStrings__blogdb");
+if (connectionString == null) {
+    // no Aspire
+    Console.WriteLine("Connection string 'blogdb' not found. Using default connection string.");
+    connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+    if (connectionString == null) {
+        throw new InvalidOperationException("Connection string not found.");
+    }
+}
 
-// Console.WriteLine($"Connection string: {connectionString}");
+Console.WriteLine($"Connection string: {connectionString}");
 
-// builder.Services.AddDbContext<ApplicationDbContext>(options =>
-//   options.UseSqlServer(connectionString));
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+  options.UseSqlServer(connectionString));
 
 builder.Services.AddIdentity<User, IdentityRole>(
 options => {
@@ -68,7 +68,7 @@ builder.Services.AddSingleton<IEmailSender<User>, IdentityNoOpEmailSender>();
 builder.AddServiceDefaults();
 
 //Register Seeder
-builder.Services.AddScoped<DbSeeder>();
+// builder.Services.AddScoped<DbSeeder>();
 
 
 var app = builder.Build();
@@ -105,18 +105,23 @@ using (var scope = app.Services.CreateScope())
 
     Console.WriteLine($"Aspire Connection String: {context.Database.GetConnectionString()}");
 
-    context.Database.EnsureCreated();
+    // context.Database.EnsureCreated();
     context.Database.Migrate();
 
-    try
-    {
-        await DbSeeder.SeedDataAsync(services);
-    }
-    catch (Exception ex)
-    {
-        var logger = services.GetRequiredService<ILogger<Program>>();
-        logger.LogError(ex, "An error occurred seeding the DB.");
-    }
+    // Seed Users
+    await SeedUsersRoles.Initialize(services);
+    // Seed Articles
+    await SeedArticles.Initialize(services);
+
+    // try
+    // {
+    //     await DbSeeder.SeedDataAsync(services);
+    // }
+    // catch (Exception ex)
+    // {
+    //     var logger = services.GetRequiredService<ILogger<Program>>();
+    //     logger.LogError(ex, "An error occurred seeding the DB.");
+    // }
 }
 
 app.Run();

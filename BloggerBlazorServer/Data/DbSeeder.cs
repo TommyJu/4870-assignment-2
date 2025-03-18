@@ -77,7 +77,7 @@ public class DbSeeder
                 CreateDate = new DateTime(2025, 3, 7, 14, 30, 45),
                 StartDate = new DateTime(2025, 3, 7, 14, 30, 45),
                 EndDate = new DateTime(2025, 3, 21, 14, 30, 45),
-                UserName = "a@a.a"
+                // UserName = "a@a.a"
             },
                 new Article
             {
@@ -87,7 +87,7 @@ public class DbSeeder
                 CreateDate = new DateTime(2025, 3, 8, 10, 15, 30),
                 StartDate = new DateTime(2025, 3, 8, 10, 15, 30),
                 EndDate = new DateTime(2025, 3, 22, 10, 15, 30),
-                UserName = "c@c.c"
+                // UserName = "c@c.c"
             },
             new Article
             {
@@ -97,7 +97,7 @@ public class DbSeeder
                 CreateDate = new DateTime(2025, 3, 9, 9, 0, 0),
                 StartDate = new DateTime(2025, 3, 9, 9, 0, 0),
                 EndDate = new DateTime(2025, 3, 23, 9, 0, 0),
-                UserName = "a@a.a"
+                // UserName = "a@a.a"
             },
             new Article
             {
@@ -107,7 +107,7 @@ public class DbSeeder
                 CreateDate = new DateTime(2025, 3, 10, 12, 45, 20),
                 StartDate = new DateTime(2025, 3, 10, 12, 45, 20),
                 EndDate = new DateTime(2025, 3, 24, 12, 45, 20),
-                UserName = "c@c.c"
+                // UserName = "c@c.c"
             },
             new Article
             {
@@ -117,7 +117,7 @@ public class DbSeeder
                 CreateDate = new DateTime(2025, 3, 11, 16, 20, 10),
                 StartDate = new DateTime(2025, 3, 11, 16, 20, 10),
                 EndDate = new DateTime(2025, 3, 25, 16, 20, 10),
-                UserName = "a@a.a"
+                // UserName = "a@a.a"
             }
         };
 
