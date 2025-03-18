@@ -1,3 +1,33 @@
+// using BlogLibrary;
+// using Microsoft.AspNetCore.Identity;
+// using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+// using Microsoft.EntityFrameworkCore;
+
+// namespace BloggerBlazorServer.Data;
+
+// public class ApplicationDbContext : IdentityDbContext<User, IdentityRole, string>
+// {
+//     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+//         : base(options)
+//     { }
+//      public DbSet<Article> Articles { get; set; }
+
+//     protected override void OnModelCreating(ModelBuilder builder) {
+//         base.OnModelCreating(builder);
+
+//         DbSeeder dbSeeder = new();
+
+//         Console.WriteLine(dbSeeder.Roles);
+//         Console.WriteLine(dbSeeder.Users);
+//         Console.WriteLine(dbSeeder.Articles);
+
+//         builder.Entity<IdentityRole>().HasData(dbSeeder.Roles);
+//         builder.Entity<User>().HasData(dbSeeder.Users);
+//         builder.Entity<Article>().HasData(dbSeeder.Articles);
+//     }
+    
+// }
+
 using BlogLibrary;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -8,32 +38,12 @@ using CsvHelper.Configuration;
 
 namespace BloggerBlazorServer.Data;
 
-public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : IdentityDbContext<ApplicationUser>(options)
+public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : IdentityDbContext<User>(options)
 {
-     public DbSet<Article> Article => Set<Article>();
+     public DbSet<Article> Articles => Set<Article>();
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<Article>().HasData(GetArticles());
-        }
-        public static IEnumerable<Article> GetArticles()
-        {
-            string[] p = { Directory.GetCurrentDirectory(), "wwwroot", "articles.csv"
-};
-            var csvFilePath = Path.Combine(p);
-            var config = new CsvConfiguration(CultureInfo.InvariantCulture)
-            {
-                Encoding = Encoding.UTF8,
-                PrepareHeaderForMatch = args => args.Header.ToLower(),
-            };
-            var data = new List<Article>().AsEnumerable();
-            using (var reader = new StreamReader(csvFilePath))
-            {
-                using (var csvReader = new CsvReader(reader, config))
-                {
-                    data = csvReader.GetRecords<Article>().ToList();
-                }
-            }
-            return data;
+            modelBuilder.Entity<Article>();
         }
 }

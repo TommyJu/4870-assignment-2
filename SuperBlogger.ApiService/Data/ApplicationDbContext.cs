@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore;
 namespace SuperBlogger.ApiService.Data;
 
 public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) 
-    : IdentityDbContext<ApplicationUser>(options)
+    : IdentityDbContext<User>(options)
 {
-    public DbSet<Article> Article => Set<Article>();
+    public DbSet<Article> Articles => Set<Article>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

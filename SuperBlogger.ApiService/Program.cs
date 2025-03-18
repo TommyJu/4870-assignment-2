@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using SuperBlogger.ApiService.Data;
+using BloggerBlazorServer.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -51,13 +51,13 @@ app.UseExceptionHandler(appBuilder =>
 
 app.MapGet("/articles", async (ApplicationDbContext db) =>
 {
-    var articles = await db.Article.ToListAsync();
+    var articles = await db.Articles.ToListAsync();
     return articles;
 });
 
 app.MapGet("/articles/{id}", async (ApplicationDbContext db, int id) =>
 {
-    var article = await db.Article.FindAsync(id);
+    var article = await db.Articles.FindAsync(id);
     return article is not null ? Results.Ok(article) : Results.NotFound();
 });
 

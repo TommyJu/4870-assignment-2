@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace BloggerBlazorServer.Migrations
+namespace BloggerBlazorServer.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot
@@ -33,6 +33,9 @@ namespace BloggerBlazorServer.Migrations
                     b.Property<string>("Body")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ContributorId")
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<DateTime?>("CreateDate")
                         .HasColumnType("datetime2");
 
@@ -50,62 +53,12 @@ namespace BloggerBlazorServer.Migrations
 
                     b.HasKey("ArticleId");
 
-                    b.ToTable("Article");
+                    b.HasIndex("ContributorId");
 
-                    b.HasData(
-                        new
-                        {
-                            ArticleId = 1,
-                            Body = "There is a lot of hype around the new creatures known as doughcats in riot's top tier autobattle simulator, TFT.",
-                            CreateDate = new DateTime(2025, 3, 7, 14, 30, 45, 0, DateTimeKind.Unspecified),
-                            EndDate = new DateTime(2025, 3, 21, 14, 30, 45, 0, DateTimeKind.Unspecified),
-                            StartDate = new DateTime(2025, 3, 7, 14, 30, 45, 0, DateTimeKind.Unspecified),
-                            Title = "How Dough Cats are taking over the World",
-                            UserName = "a@a.a"
-                        },
-                        new
-                        {
-                            ArticleId = 2,
-                            Body = "Artificial Intelligence is transforming how we interact with technology, from chatbots to personal assistants.",
-                            CreateDate = new DateTime(2025, 3, 8, 10, 15, 30, 0, DateTimeKind.Unspecified),
-                            EndDate = new DateTime(2025, 3, 22, 10, 15, 30, 0, DateTimeKind.Unspecified),
-                            StartDate = new DateTime(2025, 3, 8, 10, 15, 30, 0, DateTimeKind.Unspecified),
-                            Title = "The Rise of AI Companions",
-                            UserName = "b@b.b"
-                        },
-                        new
-                        {
-                            ArticleId = 3,
-                            Body = "Scientists are uncovering new marine species and mysteries hidden in the unexplored depths of the ocean.",
-                            CreateDate = new DateTime(2025, 3, 9, 9, 0, 0, 0, DateTimeKind.Unspecified),
-                            EndDate = new DateTime(2025, 3, 23, 9, 0, 0, 0, DateTimeKind.Unspecified),
-                            StartDate = new DateTime(2025, 3, 9, 9, 0, 0, 0, DateTimeKind.Unspecified),
-                            Title = "Exploring the Deep Ocean",
-                            UserName = "c@c.c"
-                        },
-                        new
-                        {
-                            ArticleId = 4,
-                            Body = "Space agencies and private companies are racing to establish a human presence on Mars within the next decade.",
-                            CreateDate = new DateTime(2025, 3, 10, 12, 45, 20, 0, DateTimeKind.Unspecified),
-                            EndDate = new DateTime(2025, 3, 24, 12, 45, 20, 0, DateTimeKind.Unspecified),
-                            StartDate = new DateTime(2025, 3, 10, 12, 45, 20, 0, DateTimeKind.Unspecified),
-                            Title = "Mars Colonization: The Next Step",
-                            UserName = "d@d.d"
-                        },
-                        new
-                        {
-                            ArticleId = 5,
-                            Body = "Researchers have made significant advancements in quantum computing, paving the way for solving complex problems.",
-                            CreateDate = new DateTime(2025, 3, 11, 16, 20, 10, 0, DateTimeKind.Unspecified),
-                            EndDate = new DateTime(2025, 3, 25, 16, 20, 10, 0, DateTimeKind.Unspecified),
-                            StartDate = new DateTime(2025, 3, 11, 16, 20, 10, 0, DateTimeKind.Unspecified),
-                            Title = "Quantum Computing Breakthroughs",
-                            UserName = "e@e.e"
-                        });
+                    b.ToTable("Articles");
                 });
 
-            modelBuilder.Entity("BloggerBlazorServer.Data.ApplicationUser", b =>
+            modelBuilder.Entity("BlogLibrary.User", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -123,6 +76,12 @@ namespace BloggerBlazorServer.Migrations
 
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
+
+                    b.Property<string>("FirstName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastName")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
@@ -250,10 +209,12 @@ namespace BloggerBlazorServer.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .HasColumnType("nvarchar(450)");
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
 
                     b.Property<string>("ProviderKey")
-                        .HasColumnType("nvarchar(450)");
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
 
                     b.Property<string>("ProviderDisplayName")
                         .HasColumnType("nvarchar(max)");
@@ -290,10 +251,12 @@ namespace BloggerBlazorServer.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("LoginProvider")
-                        .HasColumnType("nvarchar(450)");
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(450)");
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
 
                     b.Property<string>("Value")
                         .HasColumnType("nvarchar(max)");
@@ -301,6 +264,15 @@ namespace BloggerBlazorServer.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("BlogLibrary.Article", b =>
+                {
+                    b.HasOne("BlogLibrary.User", "Contributor")
+                        .WithMany()
+                        .HasForeignKey("ContributorId");
+
+                    b.Navigation("Contributor");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -314,7 +286,7 @@ namespace BloggerBlazorServer.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("BloggerBlazorServer.Data.ApplicationUser", null)
+                    b.HasOne("BlogLibrary.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -323,7 +295,7 @@ namespace BloggerBlazorServer.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("BloggerBlazorServer.Data.ApplicationUser", null)
+                    b.HasOne("BlogLibrary.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -338,7 +310,7 @@ namespace BloggerBlazorServer.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("BloggerBlazorServer.Data.ApplicationUser", null)
+                    b.HasOne("BlogLibrary.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -347,7 +319,7 @@ namespace BloggerBlazorServer.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("BloggerBlazorServer.Data.ApplicationUser", null)
+                    b.HasOne("BlogLibrary.User", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)

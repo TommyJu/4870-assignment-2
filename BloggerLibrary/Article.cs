@@ -2,6 +2,7 @@
 using System;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+
 public class Article
 {
     [Key]
@@ -12,7 +13,8 @@ public class Article
     public DateTime? CreateDate { get; set; }
     public DateTime? StartDate { get; set; }
     public DateTime? EndDate { get; set; }
-    //[ForeignKey("Username")]
+
+    [ForeignKey("Username")]
     public string? UserName { get; set; }
-    //public User? Contributor { get; set; }
+    public User? Contributor { get; set; }
 }
