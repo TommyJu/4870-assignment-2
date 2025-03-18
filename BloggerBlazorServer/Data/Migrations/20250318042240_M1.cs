@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
+
 namespace BloggerBlazorServer.Data.Migrations
 {
     /// <inheritdoc />
@@ -180,6 +182,36 @@ namespace BloggerBlazorServer.Data.Migrations
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.InsertData(
+                table: "Articles",
+                columns: new[] { "ArticleId", "Body", "ContributorId", "CreateDate", "EndDate", "StartDate", "Title", "UserName" },
+                values: new object[,]
+                {
+                    { 1, "There is a lot of hype around the new creatures known as doughcats in Riot's top-tier autobattle simulator, TFT.", null, new DateTime(2025, 3, 7, 14, 30, 45, 0, DateTimeKind.Unspecified), new DateTime(2025, 3, 21, 14, 30, 45, 0, DateTimeKind.Unspecified), new DateTime(2025, 3, 7, 14, 30, 45, 0, DateTimeKind.Unspecified), "How Dough Cats are Taking Over the World Twice", "a@a.a" },
+                    { 2, "Artificial Intelligence is transforming how we interact with technology, from chatbots to personal assistants.", null, new DateTime(2025, 3, 8, 10, 15, 30, 0, DateTimeKind.Unspecified), new DateTime(2025, 3, 22, 10, 15, 30, 0, DateTimeKind.Unspecified), new DateTime(2025, 3, 8, 10, 15, 30, 0, DateTimeKind.Unspecified), "The Rise of AI Companions", "c@c.c" },
+                    { 3, "Scientists are uncovering new marine species and mysteries hidden in the unexplored depths of the ocean.", null, new DateTime(2025, 3, 9, 9, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2025, 3, 23, 9, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2025, 3, 9, 9, 0, 0, 0, DateTimeKind.Unspecified), "Exploring the Deep Ocean", "a@a.a" },
+                    { 4, "Space agencies and private companies are racing to establish a human presence on Mars within the next decade.", null, new DateTime(2025, 3, 10, 12, 45, 20, 0, DateTimeKind.Unspecified), new DateTime(2025, 3, 24, 12, 45, 20, 0, DateTimeKind.Unspecified), new DateTime(2025, 3, 10, 12, 45, 20, 0, DateTimeKind.Unspecified), "Mars Colonization: The Next Step", "c@c.c" },
+                    { 5, "Researchers have made significant advancements in quantum computing, paving the way for solving complex problems.", null, new DateTime(2025, 3, 11, 16, 20, 10, 0, DateTimeKind.Unspecified), new DateTime(2025, 3, 25, 16, 20, 10, 0, DateTimeKind.Unspecified), new DateTime(2025, 3, 11, 16, 20, 10, 0, DateTimeKind.Unspecified), "Quantum Computing Breakthroughs", "a@a.a" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "AspNetRoles",
+                columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
+                values: new object[,]
+                {
+                    { "admin", null, "Admin", "ADMIN" },
+                    { "contributor", null, "Contributor", "CONTRIBUTOR" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "AspNetUsers",
+                columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FirstName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
+                values: new object[,]
+                {
+                    { "663eb119-ac89-441b-ab84-fe29d20d607e", 0, "6a49d4cb-67d4-4970-a5b9-f740ed940f63", "c@c.c", true, "Bruce", "Link", false, null, "C@C.C", "C@C.C", "AQAAAAIAAYagAAAAEAtVoXmHg+Ml3G8Ojz/wgFo7sP/RtZx57RN6+2+FhbHIMZ1QKPJwLXGJVwfOLlIcEw==", null, false, "72609b1d-078b-486a-adee-877959d390e4", false, "c@c.c" },
+                    { "cf3d436b-8f4e-40f2-b17a-40cae6cb4d35", 0, "752b079b-54ac-4c75-bd6e-99a51c523dd4", "a@a.a", true, "Med", "Hat", false, null, "A@A.A", "A@A.A", "AQAAAAIAAYagAAAAEJbcdxvvIR69SO98+fH7kPNwNQsM3UFX1Lyry/8beDQIH4N5wkkv6hyT2KWSKdd2Rw==", null, false, "df77d8bf-a939-42e9-95cb-beb002e86825", false, "a@a.a" }
                 });
 
             migrationBuilder.CreateIndex(

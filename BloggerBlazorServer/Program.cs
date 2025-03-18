@@ -9,7 +9,7 @@ using Aspire;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//builder.AddSqlServerDbContext<ApplicationDbContext>("blogdb");
+// builder.AddSqlServerDbContext<ApplicationDbContext>("blogdb");
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
@@ -32,22 +32,22 @@ builder.Services.AddAuthentication(options =>
 //     options.UseSqlServer(connectionString));
 // builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-// builder.AddSqlServerDbContext<ApplicationDbContext>("blogdb");
+builder.AddSqlServerDbContext<ApplicationDbContext>("blogdb");
 
-var connectionString = Environment.GetEnvironmentVariable("ConnectionStrings__blogdb");
-if (connectionString == null) {
-    // no Aspire
-    Console.WriteLine("Connection string 'blogdb' not found. Using default connection string.");
-    connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-    if (connectionString == null) {
-        throw new InvalidOperationException("Connection string not found.");
-    }
-}
+// var connectionString = Environment.GetEnvironmentVariable("ConnectionStrings__blogdb");
+// if (connectionString == null) {
+//     // no Aspire
+//     Console.WriteLine("Connection string 'blogdb' not found. Using default connection string.");
+//     connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+//     if (connectionString == null) {
+//         throw new InvalidOperationException("Connection string not found.");
+//     }
+// }
 
-Console.WriteLine($"Connection string: {connectionString}");
+// Console.WriteLine($"Connection string: {connectionString}");
 
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-  options.UseSqlServer(connectionString));
+// builder.Services.AddDbContext<ApplicationDbContext>(options =>
+//   options.UseSqlServer(connectionString));
 
 builder.Services.AddIdentity<User, IdentityRole>(
 options => {
@@ -100,16 +100,23 @@ app.MapAdditionalIdentityEndpoints();
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
-    try{
-
-    }
-    catch (Exception ex) {
-        Console.WriteLine(ex);
-    }
+    
     var context = services.GetRequiredService<ApplicationDbContext>();
+
+    Console.WriteLine($"Aspire Connection String: {context.Database.GetConnectionString()}");
+
+    context.Database.EnsureCreated();
     context.Database.Migrate();
 
-    await DbSeeder.SeedDataAsync(services);
+    try
+    {
+        await DbSeeder.SeedDataAsync(services);
+    }
+    catch (Exception ex)
+    {
+        var logger = services.GetRequiredService<ILogger<Program>>();
+        logger.LogError(ex, "An error occurred seeding the DB.");
+    }
 }
 
 app.Run();
