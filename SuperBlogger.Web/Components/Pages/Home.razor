@@ -26,8 +26,10 @@
         {
             <QuickGrid Items="@articles.AsQueryable()" TGridItem="Article" class="table" Pagination="@pagination">
                 <PropertyColumn Property="@(_ => _.Title)" />
-                <PropertyColumn Property="@(_ => _)" Title="Author" />
-                <PropertyColumn Property="@(_ => _.CreateDate)" Format="d" Title="Date" />
+                <PropertyColumn Property="@(_ => _.Contributor!.FirstName)" Title="First Name" />
+                <PropertyColumn Property="@(_ => _.Contributor!.LastName)" Title="Last Name" />
+                <PropertyColumn Property="@(_ => _.CreateDate)" Format="d" Title="Create Date" />
+                <PropertyColumn Property="@(_ => _.EndDate)" Format="d" Title="End Date" />
                 <TemplateColumn Title="Content">
 
                     <p>
