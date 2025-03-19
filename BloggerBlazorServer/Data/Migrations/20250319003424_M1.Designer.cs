@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BloggerBlazorServer.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250318234853_M1")]
+    [Migration("20250319003424_M1")]
     partial class M1
     {
         /// <inheritdoc />

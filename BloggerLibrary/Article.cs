@@ -18,6 +18,6 @@ public class Article
     public string? ContributorId { get; set; }
     public User? Contributor { get; set; }
 
-    [NotMapped] 
-    public string? UserName => Contributor?.UserName;
+    // [NotMapped] 
+    // public string? UserName => Contributor?.UserName;
 }
