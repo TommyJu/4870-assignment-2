@@ -6,6 +6,7 @@ using BloggerBlazorServer.Components.Account;
 using BloggerBlazorServer.Data;
 using BlogLibrary;
 using Aspire;
+using BloggerBlazorServer.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -69,6 +70,9 @@ builder.AddServiceDefaults();
 
 //Register Seeder
 // builder.Services.AddScoped<DbSeeder>();
+
+// Register service for DI
+builder.Services.AddScoped<ArticleService>();
 
 
 var app = builder.Build();
