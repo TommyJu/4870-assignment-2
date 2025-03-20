@@ -4,8 +4,6 @@ using Microsoft.EntityFrameworkCore;
 using BloggerBlazorServer.Components;
 using BloggerBlazorServer.Components.Account;
 using BloggerBlazorServer.Data;
-using BlogLibrary;
-using Aspire;
 using BloggerBlazorServer.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -21,18 +19,6 @@ builder.Services.AddScoped<IdentityUserAccessor>();
 builder.Services.AddScoped<IdentityRedirectManager>();
 builder.Services.AddScoped<AuthenticationStateProvider, IdentityRevalidatingAuthenticationStateProvider>();
 builder.Services.AddScoped<RoleManager<IdentityRole>>();
-
-// builder.Services.AddAuthentication(options =>
-//     {
-//         options.DefaultScheme = IdentityConstants.ApplicationScheme;
-//         options.DefaultSignInScheme = IdentityConstants.ExternalScheme;
-//     })
-//     .AddIdentityCookies();
-
-// var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
-// builder.Services.AddDbContext<ApplicationDbContext>(options =>
-//     options.UseSqlServer(connectionString));
-// builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 
 var connectionString = Environment.GetEnvironmentVariable("ConnectionStrings__blogdb");
@@ -67,9 +53,6 @@ builder.Services.AddSingleton<IEmailSender<User>, IdentityNoOpEmailSender>();
 
 // Add service defaults & Aspire components.
 builder.AddServiceDefaults();
-
-//Register Seeder
-// builder.Services.AddScoped<DbSeeder>();
 
 // Register service for DI
 builder.Services.AddScoped<ArticleService>();
@@ -117,15 +100,6 @@ using (var scope = app.Services.CreateScope())
     // Seed Articles
     await SeedArticles.Initialize(services);
 
-    // try
-    // {
-    //     await DbSeeder.SeedDataAsync(services);
-    // }
-    // catch (Exception ex)
-    // {
-    //     var logger = services.GetRequiredService<ILogger<Program>>();
-    //     logger.LogError(ex, "An error occurred seeding the DB.");
-    // }
 }
 
 app.Run();
