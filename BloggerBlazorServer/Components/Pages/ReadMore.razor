@@ -1,0 +1,49 @@
+﻿@page "/readmore/{articleId:int}"
+@using BlogLibrary
+@using BloggerBlazorServer.Services
+@inject ArticleService articleService
+
+<link rel="stylesheet" href="style.css" asp-append-version="true" />
+
+<div class="article-box">
+    @if (isLoading)
+    {
+        <p>Loading article...</p>
+    }
+    else if (Model is null)
+    {
+        <p class="text-danger">Article not found.</p>
+    }
+    else
+    {
+        <h3 class="article-title">@Model.Title</h3>
+        <h5 class="article-meta">@Model.Contributor!.FirstName @Model.Contributor!.LastName</h5>
+        <p class="article-body">@Model.Body</p>
+    }
+</div>
+
+<a href="/" class="btn btn-secondary">Back to Articles</a>
+
+@code {
+    [Parameter]
+    public int articleId { get; set; }
+
+    private Article? Model { get; set; }
+    private bool isLoading = true;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            Model = await articleService.GetArticleByIdAsync(articleId);
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine($"Error fetching article: {ex.Message}");
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+}

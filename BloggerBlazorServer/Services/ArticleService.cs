@@ -13,4 +13,11 @@ public class ArticleService(ApplicationDbContext _context)
         .Include(a => a.Contributor)
         .ToListAsync();
     }
+
+    public async Task<Article?> GetArticleByIdAsync(int articleId)
+    {
+        return await _context.Articles
+            .Include(a => a.Contributor)
+            .FirstOrDefaultAsync(a => a.ArticleId == articleId);
+    }
 }
