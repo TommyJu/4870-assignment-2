@@ -57,6 +57,10 @@ builder.AddServiceDefaults();
 // Register service for DI
 builder.Services.AddScoped<ArticleService>();
 
+// Add services to the container.
+builder.Services.AddRazorComponents()
+    .AddInteractiveServerComponents();
+
 
 var app = builder.Build();
 
@@ -78,8 +82,10 @@ app.UseHttpsRedirection();
 app.UseAntiforgery();
 
 app.MapStaticAssets();
+
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
+
 
 // Add additional endpoints required by the Identity /Account Razor components.
 app.MapAdditionalIdentityEndpoints();

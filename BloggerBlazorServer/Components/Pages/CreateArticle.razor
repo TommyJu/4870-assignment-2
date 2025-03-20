@@ -1,19 +1,26 @@
 ﻿@page "/create-article"
 @rendermode InteractiveServer
+@using BloggerBlazorServer.Services
+@inject ArticleService articleService
+@inject NavigationManager navigationManager
 
 <PageTitle>Create Article</PageTitle>
 
-<h1>Create Article</h1>
-
-<p role="status">Current count: @currentCount</p>
-
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+<div class="text-center">
+    <form method="POST" @onsubmit="InsertArticle">
+        <h1 class="display-4">Create an Article</h1>
+            <input type="text" class="form-control" id="title" name="Title" placeholder="Enter a title" @bind="article.Title">
+            <textarea class="form-control" id="body" name="Body" placeholder="Write your article here..." rows="10" @bind="article.Body"></textarea>
+        <button type="submit" class="btn btn-primary">Post</button>
+    </form>
+</div>
 
 @code {
-    private int currentCount = 0;
-
-    private void IncrementCount()
+    private Article article {get; set;} = new Article();
+    private async Task InsertArticle()
     {
-        currentCount++;
+        await articleService.InsertArticleAsync(article);
+        navigationManager.NavigateTo("/");
     }
+
 }

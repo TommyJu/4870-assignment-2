@@ -24,7 +24,7 @@
         }
         else
         {
-            <QuickGrid Items="@articles.AsQueryable()" TGridItem="Article" class="table" Pagination="@pagination">
+            <QuickGrid Items="@articles" TGridItem="Article" class="table" Pagination="@pagination">
                 <PropertyColumn Property="@(_ => _.Title)" />
                 <PropertyColumn Property="@(_ => _.Contributor!.FirstName)" Title="First Name" />
                 <PropertyColumn Property="@(_ => _.Contributor!.LastName)" Title="Last Name" />
@@ -48,19 +48,19 @@
 </div>
 
 @code {
-    private List<Article>? articles;
+    private IQueryable<Article>? articles;
 
     protected override async Task OnInitializedAsync()
     {
         // Fetch articles using the API client
-        articles = (await articleApiClient.GetArticlesAsync()).ToList();
+        articles = (await articleApiClient.GetArticlesAsync()).AsQueryable();
 
         // Filter articles by date range (only show most recent articles)
         if (articles != null)
         {
             DateTime currentUtcDate = DateTime.UtcNow;
 
-            articles = articles.Where(a => currentUtcDate >= a.StartDate && currentUtcDate < a.EndDate).ToList();
+            articles = articles.Where(a => currentUtcDate >= a.StartDate && currentUtcDate < a.EndDate).AsQueryable();
         }
     }
 

@@ -3,13 +3,13 @@
 @using BloggerBlazorServer.Services
 @using Microsoft.AspNetCore.Components.QuickGrid
 @inject ArticleService articleService
+@inject NavigationManager navigationManager
 
 <PageTitle>Home</PageTitle>
 
 <link rel="stylesheet" href="style.css" asp-append-version="true" />
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
 
     <div style="margin-top: 40px;">
         <h1>Recent Articles</h1>
@@ -24,7 +24,7 @@
         }
         else
         {
-            <QuickGrid Items="@articles.AsQueryable()" TGridItem="Article" class="table" Pagination="@pagination">
+            <QuickGrid Items="@articles" TGridItem="Article" class="table" Pagination="@pagination">
                 <PropertyColumn Property="@(_ => _.Title)" />
                 <PropertyColumn Property="@(_ => _.Contributor!.FirstName)" Title="First Name" />
                 <PropertyColumn Property="@(_ => _.Contributor!.LastName)" Title="Last Name" />
@@ -41,6 +41,14 @@
                         }
                     </p>
                 </TemplateColumn>
+                <TemplateColumn Title="Actions">
+                    <button class="btn btn-primary margin-2" @onclick="() => EditArticle(context.ArticleId)">
+                        Edit
+                    </button>
+                    <button class="btn btn-danger margin-2" @onclick="() => DeleteArticle(context.ArticleId)">
+                        Delete
+                    </button>
+                </TemplateColumn>
             </QuickGrid>
             <Paginator State="@pagination" />
         }
@@ -48,20 +56,31 @@
 </div>
 
 @code {
-    List<Article>? articles;
-    
+    IQueryable<Article>? articles;
+
+
     protected override async Task OnInitializedAsync()
     {
-        articles = await articleService.GetArticlesAsync();
-        Console.WriteLine(articles);
+        articles = (await articleService.GetArticlesAsync()).AsQueryable();
+        
 
         // Filter articles by date range (only show most recent articles)
         if (articles != null)
         {
             DateTime currentUtcDate = DateTime.UtcNow;
 
-            articles = articles.Where(a => currentUtcDate >= a.StartDate && currentUtcDate < a.EndDate).ToList();
+            articles = articles.Where(a => currentUtcDate >= a.StartDate && currentUtcDate < a.EndDate).AsQueryable();
         }
+    }
+
+    private void EditArticle(int articleId)
+    {
+        navigationManager.NavigateTo($"/edit-article/{articleId}");
+    }
+    private async Task DeleteArticle(int articleId)
+    {
+        await articleService.DeleteArticleAsync(articleId);
+        StateHasChanged();
     }
 
     private PaginationState pagination = new PaginationState { ItemsPerPage = 5 };

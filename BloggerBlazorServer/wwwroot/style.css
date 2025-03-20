@@ -25,3 +25,7 @@
 .more-link:hover {
     text-decoration: underline;
 }
+
+.margin-2 {
+    margin: 2px;
+}
