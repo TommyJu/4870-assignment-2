@@ -4,6 +4,8 @@
 @inject ArticleService articleService
 @inject NavigationManager navigationManager
 
+@attribute [Authorize(Roles = "Admin, Contributor")]
+
 <PageTitle>Create Article</PageTitle>
 
 <div class="text-center">
