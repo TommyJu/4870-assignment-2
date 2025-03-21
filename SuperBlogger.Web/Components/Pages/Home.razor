@@ -14,6 +14,10 @@
     <div style="margin-top: 40px;">
         <h1>Recent Articles</h1>
 
+        <p>
+            <input type="text" @bind="searchString" @bind:event="oninput" placeholder="Search by article title"/>
+        </p>
+
         @if (articles is null)
         {
             <p>Loading articles...</p>
@@ -24,7 +28,7 @@
         }
         else
         {
-            <QuickGrid Items="@articles" TGridItem="Article" class="table" Pagination="@pagination">
+            <QuickGrid Items="@filteredArticles" TGridItem="Article" class="table" Pagination="@pagination">
                 <PropertyColumn Property="@(_ => _.Title)" />
                 <PropertyColumn Property="@(_ => _.Contributor!.FirstName)" Title="First Name" />
                 <PropertyColumn Property="@(_ => _.Contributor!.LastName)" Title="Last Name" />
@@ -49,6 +53,16 @@
 
 @code {
     private IQueryable<Article>? articles;
+
+    private string searchString = "";
+
+    IQueryable<Article> filteredArticles
+    {
+        get {
+            var result = articles?.Where(a => a.Title!.Contains(searchString, StringComparison.OrdinalIgnoreCase));
+            return result!;
+            }
+    }
 
     protected override async Task OnInitializedAsync()
     {

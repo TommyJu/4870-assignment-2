@@ -2,10 +2,13 @@
 @using BloggerBlazorServer.Services
 @using Microsoft.AspNetCore.Components.QuickGrid
 @using Microsoft.EntityFrameworkCore
+@using System.Security.Claims
 @rendermode InteractiveServer
 
 @inject ArticleService articleService
 @inject NavigationManager navigationManager
+@inject AuthenticationStateProvider AuthenticationStateProvider
+
 
 <PageTitle>Home</PageTitle>
 
@@ -47,13 +50,16 @@
                         }
                     </p>
                 </TemplateColumn>
-                <TemplateColumn Title="Actions">
+
+                <TemplateColumn>
+                        @if((isContributor && userId == context.ContributorId) || isAdmin) {
                     <button class="btn btn-primary margin-2" @onclick="() => EditArticle(context.ArticleId)">
                         Edit
                     </button>
                     <button class="btn btn-danger margin-2" @onclick="() => DeleteArticle(context.ArticleId)">
                         Delete
                     </button>
+                    }
                 </TemplateColumn>
             </QuickGrid>
             <Paginator State="@pagination" />
@@ -73,8 +79,23 @@
                 return result!;
                 }
         }
+
+    private string userId;
+    private bool isAdmin;
+    private bool isContributor;
+
+
     protected override async Task OnInitializedAsync()
     {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity!.IsAuthenticated) {
+          userId = user.FindFirst(ClaimTypes.NameIdentifier)!.Value;  
+          isAdmin = user.IsInRole("Admin");
+          isContributor = user.IsInRole("Contributor");
+        }
+
         articles = (await articleService.GetArticlesAsync()).AsQueryable();
         
 

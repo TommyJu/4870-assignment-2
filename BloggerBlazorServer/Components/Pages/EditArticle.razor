@@ -67,8 +67,8 @@ else
             if (Model is not null)
             {
                 // Set local values instead of directly binding to Model
-                Title = Model.Title;
-                Body = Model.Body;
+                Title = Model.Title.ToString();
+                Body = Model.Body.ToString();
             }
         }
         catch (Exception ex)
@@ -83,22 +83,19 @@ else
 
     private async Task UpdateArticle()
     {
-        if (Model != null)
+        if (string.IsNullOrWhiteSpace(Title) || string.IsNullOrWhiteSpace(Body))
         {
+
+            errorMessage = "Failed to update the article. Please check the input and try again.";
+        
+        } else {
             // Only update the Model when submitting
             Model.Title = Title;
             Model.Body = Body;
 
             var updatedArticle = await articleService.UpdateArticleAsync(Model);
 
-            if (updatedArticle == null)
-            {
-                errorMessage = "Failed to update the article. Please check the input and try again.";
-            }
-            else
-            {
-                navigationManager.NavigateTo("/");
-            }
+            navigationManager.NavigateTo("/");
         }
     }
 }
