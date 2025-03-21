@@ -25,6 +25,7 @@ public class ArticleService(ApplicationDbContext _context, AuthenticationStatePr
 
     public async Task<Article?> InsertArticleAsync(Article article)
     {
+        // Server-side validation for creating a new article.
         if (!validateArticle(article))
         {
             return null;
@@ -46,6 +47,7 @@ public class ArticleService(ApplicationDbContext _context, AuthenticationStatePr
 
     public async Task<Article?> UpdateArticleAsync(Article article)
     {
+        // Server-side validation for updating an article.
         if (!validateArticle(article))
         {
             return null;

@@ -11,18 +11,35 @@
 <div class="text-center">
     <form method="POST" @onsubmit="InsertArticle">
         <h1 class="display-4">Create an Article</h1>
-            <input type="text" class="form-control" id="title" name="Title" placeholder="Enter a title" @bind="article.Title">
-            <textarea class="form-control" id="body" name="Body" placeholder="Write your article here..." rows="10" @bind="article.Body"></textarea>
+
+        <input type="text" class="form-control" id="title" name="Title" placeholder="Enter a title" @bind="article.Title">
+        
+        <textarea class="form-control" id="body" name="Body" placeholder="Write your article here..." rows="10" @bind="article.Body"></textarea>
+
         <button type="submit" class="btn btn-primary">Post</button>
+
+        @if (!string.IsNullOrEmpty(errorMessage))
+        {
+            <div class="text-danger mt-2">@errorMessage</div>
+        }
     </form>
 </div>
 
 @code {
-    private Article article {get; set;} = new Article();
+    private Article article { get; set; } = new Article();
+    private string errorMessage = "";
+
     private async Task InsertArticle()
     {
-        await articleService.InsertArticleAsync(article);
-        navigationManager.NavigateTo("/");
-    }
+        var result = await articleService.InsertArticleAsync(article);
 
+        if (result == null)
+        {
+            errorMessage = "Failed to create the article. Please check your input and try again.";
+        }
+        else
+        {
+            navigationManager.NavigateTo("/");
+        }
+    }
 }

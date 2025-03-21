@@ -22,20 +22,25 @@ else
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
         <div class="form-group">
-            <label asp-for="Title" class="control-label"></label>
-            <input asp-for="Title" class="form-control" @bind="@Model.Title" />
-            <span asp-validation-for="Title" class="text-danger"></span>
+            <label for="title" class="control-label">Title</label>
+            <input id="title" class="form-control" @bind="@Title" />
+            <span class="text-danger"></span>
         </div>
 
         <div class="form-group">
-            <label asp-for="Body" class="control-label"></label>
-            <textarea asp-for="Body" class="form-control" rows="10" @bind="@Model.Body"></textarea>
-            <span asp-validation-for="Body" class="text-danger"></span>
+            <label for="body" class="control-label">Body</label>
+            <textarea id="body" class="form-control" rows="10" @bind="@Body"></textarea>
+            <span class="text-danger"></span>
         </div>
 
         <div class="form-group">
             <input type="submit" value="Save Changes" class="btn btn-primary" disabled="@isLoading" />
         </div>
+
+        @if (!string.IsNullOrEmpty(errorMessage))
+        {
+            <div class="text-danger">@errorMessage</div>
+        }
 
         <div>
             <a href="/" class="btn btn-secondary">Back to List</a>
@@ -49,12 +54,22 @@ else
     public int articleId { get; set; }
     private Article? Model { get; set; }
     private bool isLoading = true;
+    private string errorMessage = "";
+
+    private string Title { get; set; } = "";
+    private string Body { get; set; } = "";
 
     protected override async Task OnInitializedAsync()
     {
         try
         {
             Model = await articleService.GetArticleByIdAsync(articleId);
+            if (Model is not null)
+            {
+                // Set local values instead of directly binding to Model
+                Title = Model.Title;
+                Body = Model.Body;
+            }
         }
         catch (Exception ex)
         {
@@ -65,13 +80,25 @@ else
             isLoading = false;
         }
     }
+
     private async Task UpdateArticle()
     {
         if (Model != null)
         {
-            await articleService.UpdateArticleAsync(Model);
-            navigationManager.NavigateTo("/");
-        }
+            // Only update the Model when submitting
+            Model.Title = Title;
+            Model.Body = Body;
 
+            var updatedArticle = await articleService.UpdateArticleAsync(Model);
+
+            if (updatedArticle == null)
+            {
+                errorMessage = "Failed to update the article. Please check the input and try again.";
+            }
+            else
+            {
+                navigationManager.NavigateTo("/");
+            }
+        }
     }
 }
