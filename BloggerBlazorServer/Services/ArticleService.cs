@@ -25,6 +25,10 @@ public class ArticleService(ApplicationDbContext _context, AuthenticationStatePr
 
     public async Task<Article?> InsertArticleAsync(Article article)
     {
+        if (!validateArticle(article))
+        {
+            return null;
+        }
         // Get the current user.
         var user = (await _authenticationStateProvider.GetAuthenticationStateAsync()).User;
 
@@ -42,6 +46,10 @@ public class ArticleService(ApplicationDbContext _context, AuthenticationStatePr
 
     public async Task<Article?> UpdateArticleAsync(Article article)
     {
+        if (!validateArticle(article))
+        {
+            return null;
+        }
         _context.Entry(article).State = EntityState.Modified;
         await _context.SaveChangesAsync();
         return article;
@@ -57,5 +65,13 @@ public class ArticleService(ApplicationDbContext _context, AuthenticationStatePr
         }
         return article;
     }
-}
 
+    public bool validateArticle(Article article)
+    {
+        if (string.IsNullOrWhiteSpace(article.Title) || string.IsNullOrWhiteSpace(article.Body))
+        {
+            return false;
+        }
+        return true;
+    }
+}
