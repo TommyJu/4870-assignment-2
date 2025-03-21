@@ -1,0 +1,74 @@
+﻿@page "/manage-users"
+@rendermode InteractiveServer
+
+@inject UserRoleService UserRoleService
+
+@attribute [Authorize(Roles = "Admin")]
+
+<PageTitle>Manage Users</PageTitle>
+
+<h1>Hello, Admin </h1>
+
+@if (users == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Email</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Role</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in users)
+            {
+                <tr>
+                    <td>@user.Email</td>
+                    <td>@user.FirstName</td>
+                    <td>@user.LastName</td>
+                    <td>@user.Role</td>
+                    <td>
+                        @if (user.Role == "User")
+                        {
+                            @* <button @onclick="() => ChangeUserRole(user.Id)" class="btn btn-warning">Make Contributor</button> *@
+                            <button @onclick="@(async () => await ChangeUserRole(user.Id))" class="btn btn-warning">Make Contributor</button>
+                        }
+                        else if (user.Role == "Contributor")
+                        {
+                            <button @onclick="() => ChangeUserRole(user.Id)" class="btn btn-info">Make User</button>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<UserWithRoleDto>? users;
+
+    protected override async Task OnInitializedAsync()
+    {
+        users = await UserRoleService.GetAllUsersWithRolesAsync();
+    }
+
+    private async Task ChangeUserRole(string userId)
+    {
+        var success = await UserRoleService.ToggleUserRoleAsync(userId);
+        if (success)
+        {
+            users = await UserRoleService.GetAllUsersWithRolesAsync(); // Refresh data
+            StateHasChanged(); 
+        }
+        else
+        {
+            Console.WriteLine("Failed to change role");
+        }
+    }
+}

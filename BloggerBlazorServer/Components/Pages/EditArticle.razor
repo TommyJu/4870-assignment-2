@@ -1,5 +1,6 @@
 ﻿@page "/edit-article/{articleId:int}"
-@using BloggerBlazorServer.Services
+@rendermode InteractiveServer
+
 @inject NavigationManager navigationManager
 @inject ArticleService articleService
 
