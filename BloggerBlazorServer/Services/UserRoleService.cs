@@ -7,11 +7,42 @@ namespace BloggerBlazorServer.Services
     {
         private readonly UserManager<User> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public UserRoleService(UserManager<User> userManager, RoleManager<IdentityRole> roleManager)
+        public UserRoleService(
+            UserManager<User> userManager, 
+            RoleManager<IdentityRole> roleManager, 
+            IHttpContextAccessor httpContextAccessor)
         {
             _userManager = userManager;
             _roleManager = roleManager;
+            _httpContextAccessor = httpContextAccessor;
+        }
+
+        // get current logged in user
+        public async Task<UserWithRoleDto?> GetCurrentUserAsync()
+        {
+            var user = _httpContextAccessor.HttpContext?.User;
+
+            if (user == null || !user.Identity!.IsAuthenticated)
+            {
+                return null;
+            }
+
+            var currentUser = await _userManager.GetUserAsync(user);
+
+            if (currentUser == null) return null;
+
+            var roles = await _userManager.GetRolesAsync(currentUser);
+
+            return new UserWithRoleDto
+            {
+                Id = currentUser.Id,
+                FirstName = currentUser.FirstName,
+                LastName = currentUser.LastName,
+                Email = currentUser.Email,
+                Role = roles.FirstOrDefault() ?? "No Role"
+            };
         }
 
         // get all the users and their roles
@@ -60,6 +91,20 @@ namespace BloggerBlazorServer.Services
             }
 
             return true;
+        }
+
+        // delete user by Email
+        public async Task<bool> DeleteUserByEmailAsync(string email)
+        {
+            var user = await _userManager.FindByEmailAsync(email);
+            if (user == null)
+            {
+                return false; // cannot find specific user
+            }
+
+            var result = await _userManager.DeleteAsync(user);
+
+            return result.Succeeded;
         }
     }
 
