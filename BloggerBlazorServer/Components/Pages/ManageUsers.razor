@@ -7,7 +7,7 @@
 
 <PageTitle>Manage Users</PageTitle>
 
-<h1>Hello, Admin </h1>
+<h1>Hello, Admin @currentUserName</h1>
 
 @if (users == null)
 {
@@ -15,47 +15,66 @@
 }
 else
 {
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Email</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Role</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var user in users)
-            {
-                <tr>
-                    <td>@user.Email</td>
-                    <td>@user.FirstName</td>
-                    <td>@user.LastName</td>
-                    <td>@user.Role</td>
-                    <td>
-                        @if (user.Role == "User")
-                        {
-                            @* <button @onclick="() => ChangeUserRole(user.Id)" class="btn btn-warning">Make Contributor</button> *@
-                            <button @onclick="@(async () => await ChangeUserRole(user.Id))" class="btn btn-warning">Make Contributor</button>
-                        }
-                        else if (user.Role == "Contributor")
-                        {
-                            <button @onclick="() => ChangeUserRole(user.Id)" class="btn btn-info">Make User</button>
-                        }
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
+    <QuickGrid TGridItem="UserWithRoleDto" Items="users" Pagination="@pagination" class="table" >
+        <PropertyColumn TGridItem="UserWithRoleDto" TProp="string" Property="u => u.Email" Title="Email" Sortable="true" />
+        <PropertyColumn TGridItem="UserWithRoleDto" TProp="string" Property="u => u.FirstName" Title="First Name" Sortable="true" />
+        <PropertyColumn TGridItem="UserWithRoleDto" TProp="string" Property="u => u.LastName" Title="Last Name" Sortable="true" />
+        <PropertyColumn TGridItem="UserWithRoleDto" TProp="string" Property="u => u.Role" Title="Role" Sortable="true" />
+
+        <TemplateColumn Title="Actions">
+            <ChildContent Context="user">
+                <div>
+                    @if (user.Role == "User")
+                    {
+                        <button @onclick="@(() => ChangeUserRole(user.Id))" class="btn btn-warning">
+                            Make Contributor
+                        </button>
+                    }
+                    else if (user.Role == "Contributor")
+                    {
+                        <button @onclick="@(() => ChangeUserRole(user.Id))" class="btn btn-info">
+                            Make User
+                        </button>
+                    }
+                </div>
+            </ChildContent>
+        </TemplateColumn>
+
+        <TemplateColumn Title="">
+            <ChildContent Context="user">
+                <div>
+                    @if (user.Role == "User")
+                    {
+                        <button @onclick="@(() => DeleteUser(user.Email!))" class="btn btn-danger">
+                            Delete
+                        </button>
+                    }
+                    else if (user.Role == "Contributor")
+                    {
+                        <button @onclick="@(() => DeleteUser(user.Email!))" class="btn btn-danger">
+                            Delete
+                        </button>
+                    }  
+                </div>
+            </ChildContent>
+        </TemplateColumn>
+    </QuickGrid>
+    <Paginator State="@pagination" />
 }
 
 @code {
-    private List<UserWithRoleDto>? users;
+    PaginationState pagination = new PaginationState { ItemsPerPage = 10 };
+
+    private string currentUserName = "";
+    private IQueryable<UserWithRoleDto>? users;
 
     protected override async Task OnInitializedAsync()
     {
-        users = await UserRoleService.GetAllUsersWithRolesAsync();
+        var currentUser = await UserRoleService.GetCurrentUserAsync();
+        currentUserName = currentUser?.FirstName + currentUser?.LastName ?? "Who?";
+
+        var userList = await UserRoleService.GetAllUsersWithRolesAsync();
+        users = userList.AsQueryable();
     }
 
     private async Task ChangeUserRole(string userId)
@@ -63,12 +82,28 @@ else
         var success = await UserRoleService.ToggleUserRoleAsync(userId);
         if (success)
         {
-            users = await UserRoleService.GetAllUsersWithRolesAsync(); // Refresh data
-            StateHasChanged(); 
+            var userList = await UserRoleService.GetAllUsersWithRolesAsync();
+            users = userList.AsQueryable(); // Refresh data
+            StateHasChanged();
         }
         else
         {
             Console.WriteLine("Failed to change role");
+        }
+    }
+
+    private async Task DeleteUser(string email)
+    {
+        var success = await UserRoleService.DeleteUserByEmailAsync(email);
+        if (success)
+        {
+            var userList = await UserRoleService.GetAllUsersWithRolesAsync();
+            users = userList.AsQueryable(); // Refresh data
+            StateHasChanged();
+        }
+        else
+        {
+            Console.WriteLine("Failed to delete user");
         }
     }
 }
