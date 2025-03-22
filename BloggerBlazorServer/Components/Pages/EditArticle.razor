@@ -19,30 +19,29 @@ else if (Model == null)
 else
 {
     <form method="post" @onsubmit="UpdateArticle" style="
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;">
-            
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;">
 
-            <input id="title" class="form-control" @bind="@Title" />
-            <span class="text-danger"></span>
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-            <textarea id="body" class="form-control" rows="10" @bind="@Body"></textarea>
-            <span class="text-danger"></span>
+        <input id="title" class="form-control" @bind="@Title" />
+        <span class="text-danger"></span>
 
-        <div style="display: flex; gap: 12px;">
-            <input type="submit" value="Save Changes" class="btn btn-primary" disabled="@isLoading"/>
-            <div>
-                <a href="/" class="btn btn-secondary">Back to List</a>
-            </div>
-        </div>
-
+        <textarea id="body" class="form-control" rows="10" @bind="@Body"></textarea>
+        <span class="text-danger"></span>
         @if (!string.IsNullOrEmpty(errorMessage))
         {
             <div class="text-danger">@errorMessage</div>
         }
+
+        <div style="display: flex; gap: 12px;">
+            <input type="submit" value="Save Changes" class="btn btn-primary" disabled="@isLoading" />
+            <div>
+                <a href="/" class="btn btn-secondary">Back to List</a>
+            </div>
+        </div>
     </form>
 }
 
@@ -81,28 +80,22 @@ else
 
     private async Task UpdateArticle()
     {
+        if (Model is null)
+        {
+            errorMessage = "Article not found.";
+            return;
+        }
         if (string.IsNullOrWhiteSpace(Title) || string.IsNullOrWhiteSpace(Body))
         {
-
             errorMessage = "Failed to update the article. Please check the input and try again.";
-
+            return;
         }
-        else
-        {
-            // Only update the Model when submitting
-            if (Model != null)
-            {
-                Model.Title = Title;
-                Model.Body = Body;
-                var updatedArticle = await articleService.UpdateArticleAsync(Model);
-                navigationManager.NavigateTo("/");
-            }
-            else
-            {
-                errorMessage = "Failed to update the article. Article data is missing.";
-            }
 
-            navigationManager.NavigateTo("/");
-        }
+        Model.Title = Title;
+        Model.Body = Body;
+        var updatedArticle = await articleService.UpdateArticleAsync(Model);
+        navigationManager.NavigateTo("/");
+
+        navigationManager.NavigateTo("/");
     }
 }
