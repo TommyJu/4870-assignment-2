@@ -30,22 +30,35 @@
         else
         {
             <QuickGrid Items="@filteredArticles" TGridItem="Article" class="table" Pagination="@pagination">
-                <PropertyColumn Property="@(_ => _.Title)" />
-                <PropertyColumn Property="@(_ => _.Contributor!.FirstName)" Title="First Name" />
-                <PropertyColumn Property="@(_ => _.Contributor!.LastName)" Title="Last Name" />
-                <PropertyColumn Property="@(_ => _.CreateDate)" Format="d" Title="Create Date" />
-                <PropertyColumn Property="@(_ => _.EndDate)" Format="d" Title="End Date" />
-                <TemplateColumn Title="Content">
 
-                    <p>
-                        @(context.Body != null && context.Body.Length > 100 ? context.Body.Substring(0, 100) + "..." :
-                                            context.Body ?? string.Empty)
-                    @if (context.Body != null && context.Body.Length > 100)
-                        {
-                            <a href="/readmore/@context.ArticleId" class="more-link">Read more</a>
-                        }
-                    </p>
-                </TemplateColumn>
+                <Microsoft.AspNetCore.Components.QuickGrid.TemplateColumn>
+                    <MudPaper Class="pa-4" Elevation="5">
+                    <MudCard Class="border-4 mud-border-primary pa-4" Style="@($"color:{Colors.Shades.White}; background:{Colors.Shades.Black}")">
+
+                            <MudText Typo="Typo.h3" Align="MudBlazor.Align.Center">@context.Title</MudText>
+                              
+                        <MudText Typo="Typo.h6" Align="MudBlazor.Align.Center">@context.Contributor!.FirstName @context.Contributor!.LastName</MudText>
+
+                        <MudCardContent>
+                            <MudText>@(context.Body != null && context.Body.Length > 100 ? context.Body.Substring(0, 100) + "..." :
+                                            context.Body ?? string.Empty)</MudText>
+                            @if (context.Body != null && context.Body.Length > 100)
+                            {
+                            <MudButton Class="red-text" Href="@($"/readmore/{context.ArticleId}")">Read more</MudButton>
+                            }
+                        </MudCardContent>
+
+                        <MudCardContent>
+                            <MudText Typo="Typo.body2">Start Date: @context.StartDate | End Date: @context.EndDate</MudText>
+                        </MudCardContent>
+
+                        <MudCardActions>
+                            <MudIconButton Icon="@Icons.Material.Filled.Favorite" Color="Color.Default" />
+                            <MudIconButton Icon="@Icons.Material.Filled.Share" Color="Color.Default" />
+                        </MudCardActions>
+                    </MudCard>
+                    </MudPaper>
+                </Microsoft.AspNetCore.Components.QuickGrid.TemplateColumn>
             </QuickGrid>
             <Paginator State="@pagination" />
         }

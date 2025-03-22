@@ -7,7 +7,6 @@
 
 <link rel="stylesheet" href="style.css" asp-append-version="true" />
 
-<div class="article-box">
     @if (isLoading)
     {
         <p>Loading article...</p>
@@ -18,13 +17,17 @@
     }
     else
     {
-        <h3 class="article-title">@Model.Title</h3>
-        <h5 class="article-meta">@Model.Contributor!.FirstName @Model.Contributor!.LastName</h5>
-        <p class="article-body">@Model.Body</p>
+        <MudPaper Class="pa-4" Elevation="5">
+            <MudCard Class="border-4 mud-border-primary pa-4" Style="@($"color:{Colors.Shades.White}; background:{Colors.Shades.Black}")">
+            <h3 class="article-title">@Model.Title</h3>
+            <h5 class="article-meta">@Model.Contributor!.FirstName @Model.Contributor!.LastName</h5>
+            <p class="article-body">@Model.Body</p>
+            <div>Start Time: @Model.StartDate | End Time: @Model.EndDate </div>
+            </MudCard>
+        </MudPaper>
     }
-</div>
 
-<a href="/" class="btn btn-secondary">Back to Articles</a>
+<a href="/" class="btn btn-secondary mt-3">Back to Articles</a>
 
 @code {
     [Parameter]

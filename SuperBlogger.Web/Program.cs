@@ -1,5 +1,6 @@
 using SuperBlogger.Web;
 using SuperBlogger.Web.Components;
+using MudBlazor.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +19,8 @@ builder.Services.AddHttpClient<ArticleApiClient>(client =>
         // Learn more about service discovery scheme resolution at https://aka.ms/dotnet/sdschemes.
         client.BaseAddress = new("https+http://apiservice");
     });
+
+builder.Services.AddMudServices();
 
 var app = builder.Build();
 
