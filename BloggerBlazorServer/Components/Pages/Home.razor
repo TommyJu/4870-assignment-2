@@ -13,11 +13,13 @@
 <PageTitle>Home</PageTitle>
 
 <link rel="stylesheet" href="style.css" asp-append-version="true" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 
 <div class="text-center">
 
     <div style="margin-top: 40px;">
-        <h1>Recent Articles</h1>
+        <h1 class="display-4">Recent Articles</h1>
 
         <p>
             <input type="text" @bind="searchString" @bind:event="oninput" placeholder="Search by article title"/>
@@ -53,12 +55,12 @@
 
                 <TemplateColumn>
                         @if((isContributor && userId == context.ContributorId) || isAdmin) {
-                    <button class="btn btn-primary margin-2" @onclick="() => EditArticle(context.ArticleId)">
-                        Edit
-                    </button>
-                    <button class="btn btn-danger margin-2" @onclick="() => DeleteArticle(context.ArticleId)">
-                        Delete
-                    </button>
+                    <button class="btn btn-primary btn-sm margin-2" @onclick="() => EditArticle(context.ArticleId)">
+            <i class="fa fa-edit"></i>
+        </button>
+                    <button class="btn btn-danger btn-sm margin-2" @onclick="() => DeleteArticle(context.ArticleId)">
+            <i class="fa fa-trash"></i> <!-- Delete Icon -->
+        </button>
                     }
                 </TemplateColumn>
             </QuickGrid>

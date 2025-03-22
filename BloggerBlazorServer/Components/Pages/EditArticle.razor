@@ -18,33 +18,31 @@ else if (Model == null)
 }
 else
 {
-    <form method="post" @onsubmit="UpdateArticle" style="display:flex; flex-direction: column; gap:24px;">
-        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <form method="post" @onsubmit="UpdateArticle" style="
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;">
+            
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-        <div class="form-group">
-            <label for="title" class="control-label">Title</label>
             <input id="title" class="form-control" @bind="@Title" />
             <span class="text-danger"></span>
-        </div>
 
-        <div class="form-group">
-            <label for="body" class="control-label">Body</label>
             <textarea id="body" class="form-control" rows="10" @bind="@Body"></textarea>
             <span class="text-danger"></span>
-        </div>
 
-        <div class="form-group">
-            <input type="submit" value="Save Changes" class="btn btn-primary" disabled="@isLoading" />
+        <div style="display: flex; gap: 12px;">
+            <input type="submit" value="Save Changes" class="btn btn-primary" disabled="@isLoading"/>
+            <div>
+                <a href="/" class="btn btn-secondary">Back to List</a>
+            </div>
         </div>
 
         @if (!string.IsNullOrEmpty(errorMessage))
         {
             <div class="text-danger">@errorMessage</div>
         }
-
-        <div>
-            <a href="/" class="btn btn-secondary">Back to List</a>
-        </div>
     </form>
 }
 
@@ -67,8 +65,8 @@ else
             if (Model is not null)
             {
                 // Set local values instead of directly binding to Model
-                Title = Model.Title.ToString();
-                Body = Model.Body.ToString();
+                Title = Model.Title?.ToString() ?? string.Empty;
+                Body = Model.Body?.ToString() ?? string.Empty;
             }
         }
         catch (Exception ex)
@@ -87,13 +85,22 @@ else
         {
 
             errorMessage = "Failed to update the article. Please check the input and try again.";
-        
-        } else {
-            // Only update the Model when submitting
-            Model.Title = Title;
-            Model.Body = Body;
 
-            var updatedArticle = await articleService.UpdateArticleAsync(Model);
+        }
+        else
+        {
+            // Only update the Model when submitting
+            if (Model != null)
+            {
+                Model.Title = Title;
+                Model.Body = Body;
+                var updatedArticle = await articleService.UpdateArticleAsync(Model);
+                navigationManager.NavigateTo("/");
+            }
+            else
+            {
+                errorMessage = "Failed to update the article. Article data is missing.";
+            }
 
             navigationManager.NavigateTo("/");
         }

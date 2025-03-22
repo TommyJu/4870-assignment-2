@@ -9,14 +9,27 @@
 <PageTitle>Create Article</PageTitle>
 
 <div class="text-center">
-    <form method="POST" @onsubmit="InsertArticle">
+    <form method="POST" @onsubmit="InsertArticle"
+    style="
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 40px;">
         <h1 class="display-4">Create an Article</h1>
 
-        <input type="text" class="form-control" id="title" name="Title" placeholder="Enter a title" @bind="article.Title">
-        
-        <textarea class="form-control" id="body" name="Body" placeholder="Write your article here..." rows="10" @bind="article.Body"></textarea>
+        <input type="text" class="form-control" id="title" name="Title" placeholder="Enter a title"
+            @bind="article.Title">
 
-        <button type="submit" class="btn btn-primary">Post</button>
+        <textarea class="form-control" id="body" name="Body" placeholder="Write your article here..." rows="10"
+            @bind="article.Body"></textarea>
+
+
+        <div style="display: flex; gap: 12px;">
+            <button type="submit" class="btn btn-primary">Publish Article</button>
+            <div>
+                <a href="/" class="btn btn-secondary">Back to List</a>
+            </div>
+        </div>
 
         @if (!string.IsNullOrEmpty(errorMessage))
         {
